@@ -1,0 +1,116 @@
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++-------------------------------------------------------------------------------------------------------------+
+|value                                                                                                        |
++-------------------------------------------------------------------------------------------------------------+
+|{"customer":"Santosh.Phillips@test.com","score":-26.5,"email":"Santosh.Phillips@test.com","birthYear":"1963"}|
+|{"customer":"Santosh.Phillips@test.com","score":-15.5,"email":"Santosh.Phillips@test.com","birthYear":"1963"}|
+|{"customer":"Santosh.Phillips@test.com","score":0.0,"email":"Santosh.Phillips@test.com","birthYear":"1963"}  |
+|{"customer":"Santosh.Phillips@test.com","score":-7.0,"email":"Santosh.Phillips@test.com","birthYear":"1963"} |
+|{"customer":"Santosh.Phillips@test.com","score":9.5,"email":"Santosh.Phillips@test.com","birthYear":"1963"}  |
+|{"customer":"Santosh.Phillips@test.com","score":10.5,"email":"Santosh.Phillips@test.com","birthYear":"1963"} |
+|{"customer":"Santosh.Phillips@test.com","score":2.5,"email":"Santosh.Phillips@test.com","birthYear":"1963"}  |
+|{"customer":"Santosh.Phillips@test.com","score":23.0,"email":"Santosh.Phillips@test.com","birthYear":"1963"} |
+|{"customer":"Santosh.Phillips@test.com","score":8.5,"email":"Santosh.Phillips@test.com","birthYear":"1963"}  |
+|{"customer":"Santosh.Phillips@test.com","score":-25.0,"email":"Santosh.Phillips@test.com","birthYear":"1963"}|
+|{"customer":"Santosh.Phillips@test.com","score":-31.0,"email":"Santosh.Phillips@test.com","birthYear":"1963"}|
+|{"customer":"Danny.Harris@test.com","score":-3.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-3.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-3.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-2.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-2.0,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-1.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-2.0,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-2.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
+|{"customer":"Danny.Harris@test.com","score":-1.5,"email":"Danny.Harris@test.com","birthYear":"1950"}         |
++-------------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++-----------------------------------------------------------------------------------------------------------+
+|value                                                                                                      |
++-----------------------------------------------------------------------------------------------------------+
+|{"customer":"Spencer.Staples@test.com","score":-1.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-3.5,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-4.5,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-3.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Chris.Jefferson@test.com","score":29.0,"email":"Chris.Jefferson@test.com","birthYear":"1940"} |
+|{"customer":"Chris.Jefferson@test.com","score":18.0,"email":"Chris.Jefferson@test.com","birthYear":"1940"} |
+|{"customer":"Chris.Jefferson@test.com","score":-8.5,"email":"Chris.Jefferson@test.com","birthYear":"1940"} |
+|{"customer":"Chris.Jefferson@test.com","score":-31.5,"email":"Chris.Jefferson@test.com","birthYear":"1940"}|
+|{"customer":"Neeraj.Gonzalez@test.com","score":11.5,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Neeraj.Gonzalez@test.com","score":16.5,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Neeraj.Gonzalez@test.com","score":0.5,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"}  |
+|{"customer":"Neeraj.Gonzalez@test.com","score":-1.5,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Gail.Staples@test.com","score":-3.5,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":-36.0,"email":"Sean.Harris@test.com","birthYear":"1941"}        |
+|{"customer":"Gail.Staples@test.com","score":-4.0,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":10.0,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
+|{"customer":"Gail.Staples@test.com","score":-3.5,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":37.5,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
+|{"customer":"Gail.Staples@test.com","score":-2.5,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":-2.0,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
++-----------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++-----------------------------------------------------------------------------------------------------------+
+|value                                                                                                      |
++-----------------------------------------------------------------------------------------------------------+
+|{"customer":"Spencer.Staples@test.com","score":-2.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-3.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-3.5,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-1.5,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Chris.Jefferson@test.com","score":-25.5,"email":"Chris.Jefferson@test.com","birthYear":"1940"}|
+|{"customer":"Chris.Jefferson@test.com","score":7.0,"email":"Chris.Jefferson@test.com","birthYear":"1940"}  |
+|{"customer":"Chris.Jefferson@test.com","score":5.0,"email":"Chris.Jefferson@test.com","birthYear":"1940"}  |
+|{"customer":"Neeraj.Gonzalez@test.com","score":4.5,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"}  |
+|{"customer":"Neeraj.Gonzalez@test.com","score":13.0,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Neeraj.Gonzalez@test.com","score":-7.0,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Gail.Staples@test.com","score":-1.0,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":-17.0,"email":"Sean.Harris@test.com","birthYear":"1941"}        |
+|{"customer":"Gail.Staples@test.com","score":-1.0,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":-2.5,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
+|{"customer":"Gail.Staples@test.com","score":-3.5,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":-11.5,"email":"Sean.Harris@test.com","birthYear":"1941"}        |
+|{"customer":"Gail.Staples@test.com","score":-4.0,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Craig.Ahmed@test.com","score":-2.0,"email":"Craig.Ahmed@test.com","birthYear":"1965"}         |
+|{"customer":"Craig.Ahmed@test.com","score":5.0,"email":"Craig.Ahmed@test.com","birthYear":"1965"}          |
+|{"customer":"Craig.Ahmed@test.com","score":-15.5,"email":"Craig.Ahmed@test.com","birthYear":"1965"}        |
++-----------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++-----------------------------------------------------------------------------------------------------------+
+|value                                                                                                      |
++-----------------------------------------------------------------------------------------------------------+
+|{"customer":"Spencer.Staples@test.com","score":-1.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-2.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-2.5,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Spencer.Staples@test.com","score":-3.0,"email":"Spencer.Staples@test.com","birthYear":"1955"} |
+|{"customer":"Chris.Jefferson@test.com","score":-31.5,"email":"Chris.Jefferson@test.com","birthYear":"1940"}|
+|{"customer":"Chris.Jefferson@test.com","score":-24.5,"email":"Chris.Jefferson@test.com","birthYear":"1940"}|
+|{"customer":"Chris.Jefferson@test.com","score":12.0,"email":"Chris.Jefferson@test.com","birthYear":"1940"} |
+|{"customer":"Chris.Jefferson@test.com","score":20.0,"email":"Chris.Jefferson@test.com","birthYear":"1940"} |
+|{"customer":"Neeraj.Gonzalez@test.com","score":-31.0,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"}|
+|{"customer":"Neeraj.Gonzalez@test.com","score":-1.0,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Neeraj.Gonzalez@test.com","score":4.0,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"}  |
+|{"customer":"Neeraj.Gonzalez@test.com","score":-5.5,"email":"Neeraj.Gonzalez@test.com","birthYear":"1942"} |
+|{"customer":"Sean.Harris@test.com","score":16.0,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
+|{"customer":"Gail.Staples@test.com","score":-1.5,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
+|{"customer":"Sean.Harris@test.com","score":16.0,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
+|{"customer":"Gail.Staples@test.com","score":0.0,"email":"Gail.Staples@test.com","birthYear":"1960"}        |
+|{"customer":"Sean.Harris@test.com","score":-13.5,"email":"Sean.Harris@test.com","birthYear":"1941"}        |
+|{"customer":"Gail.Staples@test.com","score":0.0,"email":"Gail.Staples@test.com","birthYear":"1960"}        |
+|{"customer":"Sean.Harris@test.com","score":-5.0,"email":"Sean.Harris@test.com","birthYear":"1941"}         |
+|{"customer":"Gail.Staples@test.com","score":-1.0,"email":"Gail.Staples@test.com","birthYear":"1960"}       |
++-----------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+

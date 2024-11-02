@@ -1,0 +1,32 @@
+{
+    "name": "NYC_Payroll_AGENCY_MD",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureBlobStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "AgencyMaster.csv",
+                "container": "dirpayrollfiles"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "AgencyID",
+                "type": "String"
+            },
+            {
+                "name": "AgencyName",
+                "type": "String"
+            }
+        ]
+    }
+}

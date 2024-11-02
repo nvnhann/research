@@ -1,0 +1,32 @@
+{
+    "name": "NYC_Payroll_TITLE_MD",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureBlobStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "TitleMaster.csv",
+                "container": "dirpayrollfiles"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "TitleCode",
+                "type": "String"
+            },
+            {
+                "name": "TitleDescription",
+                "type": "String"
+            }
+        ]
+    }
+}

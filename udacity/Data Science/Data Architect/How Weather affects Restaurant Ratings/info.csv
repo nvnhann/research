@@ -1,0 +1,10 @@
+table name, raw, staging(bytes), ods(bytes)
+temperature,817KB, 173kb, 173kb
+precipitation, 530KB, 108KB, 108KB
+business,118MB, 11MB, 5.53MB
+geography, N/A, N/A, 5.25MB
+customer, 3.36GB, 1.84GB, 56.5MB
+checkin, 287MB, 80MB, 82.5MB
+covid, 64MB, 4.98MB, 4.96MB
+review, 5.34GB, 1.91GB, 269MB
+tip, 190MB, 46MB, 17MB

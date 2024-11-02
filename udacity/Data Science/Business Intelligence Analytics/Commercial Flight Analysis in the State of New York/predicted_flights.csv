@@ -1,0 +1,224 @@
+dates;week_of_month;week_day;season;airport;airline;departure_hour;predicted_delay;predicted_label
+4/01/2022;1;Tuesday;Winter;JFK;4;2;0,765;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;8;0,53;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;4;0,4;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;3;0,3925;On time
+4/01/2022;1;Tuesday;Winter;JFK;0;11;0,4525;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;1;0,4775;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;9;0,5375;Delay
+4/01/2022;1;Tuesday;Winter;JFK;1;9;0,5375;Delay
+4/01/2022;1;Tuesday;Winter;JFK;1;0;0,47;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;15;0,5825;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;10;0,545;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;15;0,4825;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;6;0,415;On time
+4/01/2022;1;Tuesday;Winter;JFK;0;3;0,3925;On time
+4/01/2022;1;Tuesday;Winter;JFK;3;17;0,5975;Delay
+4/01/2022;1;Tuesday;Winter;JFK;0;18;0,505;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;20;0,62;Delay
+4/01/2022;1;Tuesday;Winter;JFK;0;10;0,445;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;13;0,5675;Delay
+4/01/2022;1;Tuesday;Winter;JFK;0;14;0,475;On time
+4/01/2022;1;Tuesday;Winter;JFK;3;14;0,575;Delay
+4/01/2022;1;Tuesday;Winter;JFK;0;7;0,4225;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;10;0,445;On time
+4/01/2022;1;Tuesday;Winter;JFK;4;0;0,75;Delay
+4/01/2022;1;Tuesday;Winter;JFK;4;9;0,8175;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;23;0,6425;Delay
+4/01/2022;1;Tuesday;Winter;JFK;4;1;0,7575;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;1;0,4775;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;20;0,62;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;3;0,3925;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;12;0,46;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;17;0,5975;Delay
+4/01/2022;1;Tuesday;Winter;JFK;0;17;0,4975;On time
+4/01/2022;1;Tuesday;Winter;JFK;4;15;0,8625;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;14;0,475;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;4;0,4;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;11;0,4525;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;3;0,4925;On time
+4/01/2022;1;Tuesday;Winter;JFK;2;14;0,475;On time
+4/01/2022;1;Tuesday;Winter;JFK;4;23;0,9225;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;5;0,4075;On time
+4/01/2022;1;Tuesday;Winter;JFK;3;1;0,4775;On time
+4/01/2022;1;Tuesday;Winter;JFK;1;14;0,575;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;15;0,5825;Delay
+4/01/2022;1;Tuesday;Winter;JFK;3;18;0,605;Delay
+4/01/2022;1;Tuesday;Winter;JFK;1;15;0,5825;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;18;0,505;Delay
+4/01/2022;1;Tuesday;Winter;JFK;2;3;0,3925;On time
+4/01/2022;1;Tuesday;Winter;JFK;0;12;0,46;On time
+4/01/2022;1;Tuesday;Winter;JFK;0;2;0,385;On time
+4/01/2022;1;Tuesday;Winter;LGA;4;18;0,885;Delay
+4/01/2022;1;Tuesday;Winter;LGA;3;11;0,5525;Delay
+4/01/2022;1;Tuesday;Winter;LGA;4;18;0,885;Delay
+4/01/2022;1;Tuesday;Winter;LGA;2;2;0,385;On time
+4/01/2022;1;Tuesday;Winter;LGA;4;15;0,8625;Delay
+4/01/2022;1;Tuesday;Winter;LGA;3;10;0,545;Delay
+4/01/2022;1;Tuesday;Winter;LGA;4;14;0,855;Delay
+4/01/2022;1;Tuesday;Winter;LGA;0;11;0,4525;On time
+5/01/2022;1;Wednesday;Winter;JFK;4;23;0,9225;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;10;0,545;Delay
+5/01/2022;1;Wednesday;Winter;JFK;0;12;0,46;On time
+5/01/2022;1;Wednesday;Winter;JFK;4;4;0,78;Delay
+5/01/2022;1;Wednesday;Winter;JFK;4;22;0,915;Delay
+5/01/2022;1;Wednesday;Winter;JFK;3;2;0,485;On time
+5/01/2022;1;Wednesday;Winter;JFK;4;18;0,885;Delay
+5/01/2022;1;Wednesday;Winter;JFK;0;14;0,475;On time
+5/01/2022;1;Wednesday;Winter;JFK;4;22;0,915;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;16;0,59;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;22;0,635;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;9;0,5375;Delay
+5/01/2022;1;Wednesday;Winter;JFK;0;10;0,445;On time
+5/01/2022;1;Wednesday;Winter;JFK;2;16;0,49;On time
+5/01/2022;1;Wednesday;Winter;JFK;0;3;0,3925;On time
+5/01/2022;1;Wednesday;Winter;JFK;2;21;0,5275;Delay
+5/01/2022;1;Wednesday;Winter;JFK;4;22;0,915;Delay
+5/01/2022;1;Wednesday;Winter;JFK;0;5;0,4075;On time
+5/01/2022;1;Wednesday;Winter;JFK;3;6;0,515;Delay
+5/01/2022;1;Wednesday;Winter;JFK;3;9;0,5375;Delay
+5/01/2022;1;Wednesday;Winter;JFK;4;11;0,8325;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;20;0,62;Delay
+5/01/2022;1;Wednesday;Winter;JFK;0;2;0,385;On time
+5/01/2022;1;Wednesday;Winter;JFK;2;16;0,49;On time
+5/01/2022;1;Wednesday;Winter;JFK;3;2;0,485;On time
+5/01/2022;1;Wednesday;Winter;JFK;0;0;0,37;On time
+5/01/2022;1;Wednesday;Winter;JFK;1;2;0,485;On time
+5/01/2022;1;Wednesday;Winter;JFK;1;7;0,5225;Delay
+5/01/2022;1;Wednesday;Winter;JFK;4;15;0,8625;Delay
+5/01/2022;1;Wednesday;Winter;JFK;3;14;0,575;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;6;0,515;Delay
+5/01/2022;1;Wednesday;Winter;JFK;1;22;0,635;Delay
+5/01/2022;1;Wednesday;Winter;JFK;3;4;0,5;On time
+5/01/2022;1;Wednesday;Winter;JFK;3;23;0,6425;Delay
+5/01/2022;1;Wednesday;Winter;JFK;4;20;0,9;Delay
+5/01/2022;1;Wednesday;Winter;LGA;0;23;0,5425;Delay
+5/01/2022;1;Wednesday;Winter;LGA;4;4;0,78;Delay
+5/01/2022;1;Wednesday;Winter;LGA;3;18;0,605;Delay
+5/01/2022;1;Wednesday;Winter;LGA;4;5;0,7875;Delay
+5/01/2022;1;Wednesday;Winter;LGA;1;1;0,4775;On time
+5/01/2022;1;Wednesday;Winter;LGA;2;13;0,4675;On time
+5/01/2022;1;Wednesday;Winter;LGA;3;23;0,6425;Delay
+5/01/2022;1;Wednesday;Winter;LGA;1;3;0,4925;On time
+5/01/2022;1;Wednesday;Winter;LGA;2;17;0,4975;On time
+5/01/2022;1;Wednesday;Winter;LGA;4;4;0,78;Delay
+5/01/2022;1;Wednesday;Winter;LGA;0;10;0,445;On time
+5/01/2022;1;Wednesday;Winter;LGA;3;13;0,5675;Delay
+5/01/2022;1;Wednesday;Winter;LGA;1;21;0,6275;Delay
+5/01/2022;1;Wednesday;Winter;LGA;2;14;0,475;On time
+5/01/2022;1;Wednesday;Winter;LGA;2;4;0,4;On time
+5/01/2022;1;Wednesday;Winter;LGA;1;3;0,4925;On time
+5/01/2022;1;Wednesday;Winter;LGA;3;3;0,4925;On time
+5/01/2022;1;Wednesday;Winter;LGA;4;20;0,9;Delay
+5/01/2022;1;Wednesday;Winter;LGA;0;11;0,4525;On time
+5/01/2022;1;Wednesday;Winter;LGA;2;3;0,3925;On time
+5/01/2022;1;Wednesday;Winter;LGA;3;3;0,4925;On time
+5/01/2022;1;Wednesday;Winter;LGA;3;18;0,605;Delay
+5/01/2022;1;Wednesday;Winter;ISP;0;19;0,5125;Delay
+5/01/2022;1;Wednesday;Winter;ISP;0;3;0,3925;On time
+5/01/2022;1;Wednesday;Winter;ISP;0;18;0,505;Delay
+5/01/2022;1;Wednesday;Winter;ISP;2;6;0,415;On time
+5/01/2022;1;Wednesday;Winter;ISP;2;1;0,3775;On time
+5/01/2022;1;Wednesday;Winter;ISP;4;23;0,9225;Delay
+5/01/2022;1;Wednesday;Winter;ISP;1;7;0,5225;Delay
+5/01/2022;1;Wednesday;Winter;ISP;4;0;0,75;Delay
+5/01/2022;1;Wednesday;Winter;ISP;1;11;0,5525;Delay
+5/01/2022;1;Wednesday;Winter;ISP;4;19;0,8925;Delay
+5/01/2022;1;Wednesday;Winter;ISP;2;10;0,445;On time
+5/01/2022;1;Wednesday;Winter;ISP;3;2;0,485;On time
+5/01/2022;1;Wednesday;Winter;ISP;1;0;0,47;On time
+5/01/2022;1;Wednesday;Winter;ISP;1;19;0,6125;Delay
+5/01/2022;1;Wednesday;Winter;ISP;3;23;0,6425;Delay
+5/01/2022;1;Wednesday;Winter;ISP;3;12;0,56;Delay
+5/01/2022;1;Wednesday;Winter;ISP;2;4;0,4;On time
+5/01/2022;1;Wednesday;Winter;ISP;0;2;0,385;On time
+5/01/2022;1;Wednesday;Winter;ISP;4;21;0,9075;Delay
+5/01/2022;1;Wednesday;Winter;ISP;2;3;0,3925;On time
+5/01/2022;1;Wednesday;Winter;ISP;0;19;0,5125;Delay
+5/01/2022;1;Wednesday;Winter;ISP;4;5;0,7875;Delay
+5/01/2022;1;Wednesday;Winter;ISP;1;11;0,5525;Delay
+5/01/2022;1;Wednesday;Winter;ISP;3;21;0,6275;Delay
+5/01/2022;1;Wednesday;Winter;ISP;3;13;0,5675;Delay
+5/01/2022;1;Wednesday;Winter;ISP;4;23;0,9225;Delay
+5/01/2022;1;Wednesday;Winter;ISP;3;4;0,5;On time
+5/01/2022;1;Wednesday;Winter;ISP;0;21;0,5275;Delay
+5/01/2022;1;Wednesday;Winter;ISP;3;20;0,62;Delay
+5/01/2022;1;Wednesday;Winter;ISP;1;5;0,5075;Delay
+6/01/2022;1;Thursday;Winter;JFK;0;1;0,3775;On time
+6/01/2022;1;Thursday;Winter;JFK;1;10;0,545;Delay
+6/01/2022;1;Thursday;Winter;JFK;2;0;0,37;On time
+6/01/2022;1;Thursday;Winter;JFK;1;13;0,5675;Delay
+6/01/2022;1;Thursday;Winter;JFK;0;9;0,4375;On time
+6/01/2022;1;Thursday;Winter;JFK;1;13;0,5675;Delay
+6/01/2022;1;Thursday;Winter;JFK;0;20;0,52;Delay
+6/01/2022;1;Thursday;Winter;JFK;3;6;0,515;Delay
+6/01/2022;1;Thursday;Winter;JFK;0;9;0,4375;On time
+6/01/2022;1;Thursday;Winter;JFK;2;20;0,52;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;2;0,765;Delay
+6/01/2022;1;Thursday;Winter;JFK;0;20;0,52;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;9;0,8175;Delay
+6/01/2022;1;Thursday;Winter;JFK;3;20;0,62;Delay
+6/01/2022;1;Thursday;Winter;JFK;1;1;0,4775;On time
+6/01/2022;1;Thursday;Winter;JFK;3;21;0,6275;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;15;0,8625;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;5;0,7875;Delay
+6/01/2022;1;Thursday;Winter;JFK;3;15;0,5825;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;5;0,7875;Delay
+6/01/2022;1;Thursday;Winter;JFK;3;11;0,5525;Delay
+6/01/2022;1;Thursday;Winter;JFK;1;2;0,485;On time
+6/01/2022;1;Thursday;Winter;JFK;0;14;0,475;On time
+6/01/2022;1;Thursday;Winter;JFK;3;1;0,4775;On time
+6/01/2022;1;Thursday;Winter;JFK;3;0;0,47;On time
+6/01/2022;1;Thursday;Winter;JFK;0;11;0,4525;On time
+6/01/2022;1;Thursday;Winter;JFK;4;2;0,765;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;18;0,885;Delay
+6/01/2022;1;Thursday;Winter;JFK;3;13;0,5675;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;15;0,8625;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;5;0,7875;Delay
+6/01/2022;1;Thursday;Winter;JFK;3;23;0,6425;Delay
+6/01/2022;1;Thursday;Winter;JFK;1;6;0,515;Delay
+6/01/2022;1;Thursday;Winter;JFK;2;20;0,52;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;0;0,75;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;2;0,765;Delay
+6/01/2022;1;Thursday;Winter;JFK;0;5;0,4075;On time
+6/01/2022;1;Thursday;Winter;JFK;0;18;0,505;Delay
+6/01/2022;1;Thursday;Winter;JFK;1;20;0,62;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;2;0,765;Delay
+6/01/2022;1;Thursday;Winter;JFK;1;23;0,6425;Delay
+6/01/2022;1;Thursday;Winter;JFK;4;15;0,8625;Delay
+6/01/2022;1;Thursday;Winter;LGA;4;20;0,9;Delay
+6/01/2022;1;Thursday;Winter;LGA;1;15;0,5825;Delay
+6/01/2022;1;Thursday;Winter;LGA;4;21;0,9075;Delay
+6/01/2022;1;Thursday;Winter;LGA;0;21;0,5275;Delay
+6/01/2022;1;Thursday;Winter;LGA;2;4;0,4;On time
+6/01/2022;1;Thursday;Winter;LGA;1;3;0,4925;On time
+6/01/2022;1;Thursday;Winter;LGA;1;2;0,485;On time
+6/01/2022;1;Thursday;Winter;LGA;0;22;0,535;Delay
+6/01/2022;1;Thursday;Winter;LGA;3;20;0,62;Delay
+6/01/2022;1;Thursday;Winter;LGA;4;15;0,8625;Delay
+6/01/2022;1;Thursday;Winter;LGA;4;6;0,795;Delay
+6/01/2022;1;Thursday;Winter;LGA;0;7;0,4225;On time
+6/01/2022;1;Thursday;Winter;LGA;1;7;0,5225;Delay
+6/01/2022;1;Thursday;Winter;ISP;3;10;0,545;Delay
+6/01/2022;1;Thursday;Winter;ISP;2;5;0,4075;On time
+6/01/2022;1;Thursday;Winter;ISP;3;16;0,59;Delay
+6/01/2022;1;Thursday;Winter;ISP;0;1;0,3775;On time
+6/01/2022;1;Thursday;Winter;ISP;4;10;0,825;Delay
+6/01/2022;1;Thursday;Winter;ISP;1;8;0,53;Delay
+6/01/2022;1;Thursday;Winter;ISP;1;11;0,5525;Delay
+6/01/2022;1;Thursday;Winter;ISP;2;0;0,37;On time
+6/01/2022;1;Thursday;Winter;ISP;0;20;0,52;Delay
+6/01/2022;1;Thursday;Winter;ISP;4;9;0,8175;Delay
+6/01/2022;1;Thursday;Winter;ISP;3;3;0,4925;On time
+6/01/2022;1;Thursday;Winter;ISP;4;6;0,795;Delay
+6/01/2022;1;Thursday;Winter;ISP;4;2;0,765;Delay
+6/01/2022;1;Thursday;Winter;ISP;2;7;0,4225;On time
+6/01/2022;1;Thursday;Winter;ISP;3;0;0,47;On time
+6/01/2022;1;Thursday;Winter;ISP;1;4;0,5;On time
+6/01/2022;1;Thursday;Winter;ISP;2;7;0,4225;On time
+6/01/2022;1;Thursday;Winter;ISP;2;15;0,4825;On time
+6/01/2022;1;Thursday;Winter;ISP;2;19;0,5125;Delay
+6/01/2022;1;Thursday;Winter;ISP;2;16;0,49;On time
+6/01/2022;1;Thursday;Winter;ISP;0;18;0,505;Delay
+6/01/2022;1;Thursday;Winter;ISP;3;0;0,47;On time
+6/01/2022;1;Thursday;Winter;ISP;4;21;0,9075;Delay

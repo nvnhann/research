@@ -1,0 +1,991 @@
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Neeraj.Khatib@tes...|-33.0|
+|Sarah.Sanchez@tes...| 26.5|
+|Santosh.Phillips@...|-26.5|
+|  Trevor.Wu@test.com|  6.0|
+|Danny.Smith@test.com|  5.0|
+|Jacob.Hansen@test...| -3.0|
+|Trevor.Harris@tes...| -1.5|
+|Christina.Habschi...| -2.0|
+|Craig.Jones@test.com| -2.5|
+|Santosh.Hansen@te...| -2.5|
+|Christina.Smith@t...|  0.0|
+|John.Jackson@test...| -5.0|
+|John.Phillips@tes...| -4.0|
+|Frank.Anandh@test...| -4.5|
+|Travis.Spencer@te...|  0.0|
+|Danny.Harris@test...| -3.5|
+|  Travis.Wu@test.com|  0.5|
+|John.Fibonnaci@te...|  7.5|
+|Christina.Davis@t...|  8.0|
+| Lyn.Hansen@test.com|  1.0|
++--------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Trevor.Mitra@test...| -1.0|
+|Neeraj.Khatib@tes...|-22.5|
+|Sarah.Sanchez@tes...| 19.5|
+|Santosh.Phillips@...|-25.0|
+|  Trevor.Wu@test.com|  4.5|
+|Danny.Smith@test.com| 29.5|
+|Jacob.Hansen@test...| -1.5|
+|Trevor.Harris@tes...| -2.5|
+|Christina.Habschi...| -1.0|
+|Craig.Jones@test.com| -5.5|
+|Santosh.Hansen@te...| -4.0|
+|Christina.Smith@t...| -4.0|
+|John.Jackson@test...| -2.0|
+|John.Phillips@tes...| -2.5|
+|Frank.Anandh@test...| -5.0|
+|Travis.Spencer@te...| -5.5|
+|Danny.Harris@test...| -1.5|
+|  Travis.Wu@test.com|  7.5|
+|John.Fibonnaci@te...| -8.0|
+|Christina.Davis@t...|  0.0|
++--------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jason.Sanchez@tes...|  6.0|
+|Frank.Staples@tes...| -5.5|
+|David.Davis@test.com|-22.5|
+|Christina.Gonzale...|  6.0|
+|Edward.Huey@test.com| 16.5|
+|Jacob.Staples@tes...| 10.5|
+|Trevor.Mitra@test...| -6.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Neeraj.Khatib@tes...| 12.0|
+|Sarah.Sanchez@tes...| 30.5|
+|Santosh.Phillips@...|-31.0|
+|  Trevor.Wu@test.com|-10.0|
+|Danny.Smith@test.com|-20.5|
+|Jacob.Hansen@test...| -2.0|
+|Trevor.Harris@tes...| -3.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Christina.Habschi...| -1.0|
+|Craig.Jones@test.com| -4.5|
+|Santosh.Hansen@te...| -4.0|
+|Christina.Smith@t...| -2.5|
+|John.Jackson@test...| -2.5|
+|John.Phillips@tes...| -1.5|
+|Frank.Anandh@test...| -5.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 5
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Spencer@te...| -5.0|
+|Danny.Harris@test...| -3.0|
+|  Travis.Wu@test.com|-31.5|
+|John.Fibonnaci@te...| 21.5|
+|Christina.Davis@t...|-18.0|
+| Lyn.Hansen@test.com|  1.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 6
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|  Lyn.Smith@test.com| 12.5|
+|Jason.Olson@test.com|-10.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 7
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Ahmed@test.com|  6.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 8
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Jones@tes...|-27.0|
+|Ben.Fibonnaci@tes...|-29.5|
+|Craig.Jefferson@t...| 26.0|
+|Jacob.Jones@test.com|  7.5|
+|Gail.Staples@test...| -3.5|
+|Larry.Habschied@t...| -1.5|
+|Chris.Spencer@tes...| -3.5|
+|Ashley.Jones@test...| -2.0|
+|Trevor.Doshi@test...| -4.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 9
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -1.0|
+|Christina.Hansen@...| -1.0|
+|John.Howard@test.com| -3.5|
+|Danny.Howard@test...| -3.5|
+|Bobby.Harris@test...| -4.5|
+|Ashley.Habschied@...| -2.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 10
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jason.Jackson@tes...|-10.0|
+|Christina.Fibonna...|  7.0|
+|Angie.Davis@test.com| 21.0|
+|Danny.Mitra@test.com| -6.5|
+|Sarah.Doshi@test.com| 14.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 11
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Neeraj.Gonzalez@t...| 11.5|
+|Sean.Harris@test.com|-36.0|
+|Chris.Jefferson@t...| 29.0|
+|  Dan.Jones@test.com|  4.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 12
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Bobby.Howard@test...| 20.5|
+|Craig.Ahmed@test.com|  0.0|
+|Spencer.Jones@tes...| -8.5|
+|Ben.Fibonnaci@tes...|-13.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 13
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Jefferson@t...| 20.5|
+|Jacob.Jones@test.com| 18.5|
+|Gail.Staples@test...| -4.0|
+|Larry.Habschied@t...| -1.0|
+|Chris.Spencer@tes...| -3.0|
+|Ashley.Jones@test...| -2.0|
+|Trevor.Doshi@test...| -5.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 14
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -3.5|
+|Christina.Hansen@...| -1.0|
+|John.Howard@test.com| -3.0|
+|Danny.Howard@test...| -3.0|
+|Bobby.Harris@test...| -2.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 15
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Habschied@...| -0.5|
+|Jason.Jackson@tes...|-21.0|
+|Christina.Fibonna...| -6.0|
+|Angie.Davis@test.com| -3.0|
+|Danny.Mitra@test.com| 23.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 16
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sarah.Doshi@test.com| -1.0|
+|Neeraj.Gonzalez@t...| 16.5|
+|Sean.Harris@test.com| 10.0|
+|Chris.Jefferson@t...| 18.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 17
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|  Dan.Jones@test.com| -1.5|
+|Bobby.Howard@test...| -0.5|
+|Craig.Ahmed@test.com| -3.5|
+|Spencer.Jones@tes...| 14.0|
+|Ben.Fibonnaci@tes...| 28.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 18
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Jefferson@t...|  0.5|
+|Jacob.Jones@test.com|-13.0|
+|Gail.Staples@test...| -3.5|
+|Larry.Habschied@t...| -3.5|
+|Chris.Spencer@tes...| -3.5|
+|Ashley.Jones@test...| -3.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 19
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Trevor.Doshi@test...| -5.5|
+|Spencer.Staples@t...| -4.5|
+|Christina.Hansen@...| -1.5|
+|John.Howard@test.com| -4.0|
+|Danny.Howard@test...| -3.0|
+|Bobby.Harris@test...| -1.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 20
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Habschied@...| -0.5|
+|Jason.Jackson@tes...|-14.5|
+|Christina.Fibonna...|  2.5|
+|Angie.Davis@test.com|-14.5|
+|Danny.Mitra@test.com|  7.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 21
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sarah.Doshi@test.com|-30.5|
+|Neeraj.Gonzalez@t...|  0.5|
+|Sean.Harris@test.com| 37.5|
+|Chris.Jefferson@t...| -8.5|
+|  Dan.Jones@test.com|  8.5|
+|Bobby.Howard@test...|-25.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 22
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Ahmed@test.com| 19.5|
+|Spencer.Jones@tes...|  0.0|
+|Ben.Fibonnaci@tes...| 39.0|
+|Craig.Jefferson@t...| 17.5|
+|Jacob.Jones@test.com| -6.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 23
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Gail.Staples@test...| -2.5|
+|Larry.Habschied@t...| -5.0|
+|Chris.Spencer@tes...| -3.5|
+|Ashley.Jones@test...| -4.0|
+|Trevor.Doshi@test...| -6.0|
+|Spencer.Staples@t...| -3.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 24
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Christina.Hansen@...| -2.5|
+|John.Howard@test.com| -4.0|
+|Danny.Howard@test...| -2.0|
+|Bobby.Harris@test...| -2.0|
+|Ashley.Habschied@...| -2.0|
+|Jason.Jackson@tes...|  1.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 25
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Christina.Fibonna...| 20.5|
+|Angie.Davis@test.com| 22.5|
+|Danny.Mitra@test.com|-26.5|
+|Sarah.Doshi@test.com|  9.5|
+|Neeraj.Gonzalez@t...| -1.5|
+|Sean.Harris@test.com| -2.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 26
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Chris.Jefferson@t...|-31.5|
+|  Dan.Jones@test.com| -5.5|
+|Bobby.Howard@test...| -0.5|
+|Craig.Ahmed@test.com|  7.0|
+|Spencer.Jones@tes...|  8.5|
+|Ben.Fibonnaci@tes...|-10.5|
+|Craig.Jefferson@t...|-11.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 27
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jacob.Jones@test.com| 26.5|
+|Gail.Staples@test...| -1.0|
+|Larry.Habschied@t...| -3.5|
+|Chris.Spencer@tes...| -2.5|
+|Ashley.Jones@test...| -4.0|
+|Trevor.Doshi@test...| -5.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 28
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -2.0|
+|Christina.Hansen@...| -3.5|
+|John.Howard@test.com| -3.0|
+|Danny.Howard@test...| -1.0|
+|Bobby.Harris@test...| -1.0|
+|Ashley.Habschied@...| -4.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 29
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jason.Jackson@tes...| 22.0|
+|Christina.Fibonna...| -7.5|
+|Angie.Davis@test.com| 19.5|
+|Danny.Mitra@test.com|-30.5|
+|Sarah.Doshi@test.com| 12.0|
+|Neeraj.Gonzalez@t...|  4.5|
+|Sean.Harris@test.com|-17.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 30
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Chris.Jefferson@t...|-25.5|
+|  Dan.Jones@test.com|-12.0|
+|Bobby.Howard@test...|  3.0|
+|Craig.Ahmed@test.com| -2.0|
+|Spencer.Jones@tes...| 16.5|
+|Ben.Fibonnaci@tes...|-12.0|
+|Craig.Jefferson@t...|-26.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 31
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jacob.Jones@test.com| 25.5|
+|Gail.Staples@test...| -1.0|
+|Larry.Habschied@t...| -1.5|
+|Chris.Spencer@tes...| -1.0|
+|Ashley.Jones@test...| -2.5|
+|Trevor.Doshi@test...| -3.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 32
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -3.0|
+|Christina.Hansen@...| -3.5|
+|John.Howard@test.com| -4.0|
+|Danny.Howard@test...| -1.5|
+|Bobby.Harris@test...| -0.5|
+|Ashley.Habschied@...| -4.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 33
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jason.Jackson@tes...| 28.0|
+|Christina.Fibonna...|-35.0|
+|Angie.Davis@test.com| -0.5|
+|Danny.Mitra@test.com| 16.5|
+|Sarah.Doshi@test.com|-11.5|
+|Neeraj.Gonzalez@t...| 13.0|
+|Sean.Harris@test.com| -2.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 34
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Chris.Jefferson@t...|  7.0|
+|  Dan.Jones@test.com|  7.0|
+|Bobby.Howard@test...|  4.0|
+|Craig.Ahmed@test.com|  5.0|
+|Spencer.Jones@tes...| -4.0|
+|Ben.Fibonnaci@tes...| 13.5|
+|Craig.Jefferson@t...| 14.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 35
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jacob.Jones@test.com|-15.5|
+|Gail.Staples@test...| -3.5|
+|Larry.Habschied@t...| -2.5|
+|Chris.Spencer@tes...| -1.5|
+|Ashley.Jones@test...| -2.0|
+|Trevor.Doshi@test...| -3.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 36
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -3.5|
+|Christina.Hansen@...| -1.5|
+|John.Howard@test.com| -5.5|
+|Danny.Howard@test...| -2.0|
+|Bobby.Harris@test...| -1.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 37
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Habschied@...| -3.5|
+|Jason.Jackson@tes...| 13.5|
+|Christina.Fibonna...| 15.0|
+|Angie.Davis@test.com|  8.5|
+|Danny.Mitra@test.com| 46.5|
+|Sarah.Doshi@test.com| 24.5|
+|Neeraj.Gonzalez@t...| -7.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 38
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sean.Harris@test.com|-11.5|
+|Chris.Jefferson@t...|  5.0|
+|  Dan.Jones@test.com| -7.0|
+|Bobby.Howard@test...| -3.0|
+|Craig.Ahmed@test.com|-15.5|
+|Spencer.Jones@tes...|-20.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 39
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ben.Fibonnaci@tes...|-15.0|
+|Craig.Jefferson@t...|-15.0|
+|Jacob.Jones@test.com| 23.0|
+|Gail.Staples@test...| -4.0|
+|Larry.Habschied@t...| -4.0|
+|Chris.Spencer@tes...| -4.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 40
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Jones@test...| -3.0|
+|Trevor.Doshi@test...| -4.5|
+|Spencer.Staples@t...| -1.5|
+|Christina.Hansen@...| -1.5|
+|John.Howard@test.com| -5.5|
+|Danny.Howard@test...| -1.0|
+|Bobby.Harris@test...| -1.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 41
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Habschied@...| -3.0|
+|Jason.Jackson@tes...|-15.0|
+|Christina.Fibonna...| 17.0|
+|Angie.Davis@test.com| -5.5|
+|Danny.Mitra@test.com| 17.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 42
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sarah.Doshi@test.com| 24.5|
+|Neeraj.Gonzalez@t...|-31.0|
+|Sean.Harris@test.com| 16.0|
+|Chris.Jefferson@t...|-31.5|
+|  Dan.Jones@test.com| 11.5|
+|Bobby.Howard@test...| -2.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 43
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Ahmed@test.com|-20.0|
+|Spencer.Jones@tes...| -0.5|
+|Ben.Fibonnaci@tes...|-15.5|
+|Craig.Jefferson@t...|-34.5|
+|Jacob.Jones@test.com| 18.5|
+|Gail.Staples@test...| -1.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 44
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Larry.Habschied@t...| -2.5|
+|Chris.Spencer@tes...| -4.5|
+|Ashley.Jones@test...| -3.0|
+|Trevor.Doshi@test...| -3.5|
+|Spencer.Staples@t...| -1.0|
+|Christina.Hansen@...| -4.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 45
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|John.Howard@test.com| -4.5|
+|Danny.Howard@test...| -1.0|
+|Bobby.Harris@test...| -2.0|
+|Ashley.Habschied@...| -3.5|
+|Jason.Jackson@tes...|-12.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 46
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Christina.Fibonna...|-11.5|
+|Angie.Davis@test.com|-10.0|
+|Danny.Mitra@test.com| -8.5|
+|Sarah.Doshi@test.com| -5.0|
+|Neeraj.Gonzalez@t...| -1.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 47
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sean.Harris@test.com| 16.0|
+|Chris.Jefferson@t...|-24.5|
+|  Dan.Jones@test.com| 21.5|
+|Bobby.Howard@test...| 15.5|
+|Craig.Ahmed@test.com|-11.0|
+|Spencer.Jones@tes...| -0.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 48
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ben.Fibonnaci@tes...| -2.5|
+|Craig.Jefferson@t...| 16.5|
+|Jacob.Jones@test.com|  6.0|
+|Gail.Staples@test...|  0.0|
+|Larry.Habschied@t...| -1.5|
+|Chris.Spencer@tes...| -4.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 49
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Jones@test...| -3.5|
+|Trevor.Doshi@test...| -2.0|
+|Spencer.Staples@t...| -2.0|
+|Christina.Hansen@...| -3.5|
+|John.Howard@test.com| -4.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 50
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Danny.Howard@test...| -2.5|
+|Bobby.Harris@test...| -1.0|
+|Ashley.Habschied@...| -3.5|
+|Jason.Jackson@tes...| 12.5|
+|Christina.Fibonna...| -2.0|
+|Angie.Davis@test.com|-16.5|
+|Danny.Mitra@test.com|-24.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 51
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sarah.Doshi@test.com|-18.0|
+|Neeraj.Gonzalez@t...|  4.0|
+|Sean.Harris@test.com|-13.5|
+|Chris.Jefferson@t...| 12.0|
+|  Dan.Jones@test.com|-17.5|
+|Bobby.Howard@test...| 15.5|
+|Craig.Ahmed@test.com| -9.5|
+|Spencer.Jones@tes...|-28.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 52
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ben.Fibonnaci@tes...|  6.5|
+|Craig.Jefferson@t...| 43.5|
+|Jacob.Jones@test.com|-16.5|
+|Gail.Staples@test...|  0.0|
+|Larry.Habschied@t...| -2.5|
+|Chris.Spencer@tes...| -5.0|
+|Ashley.Jones@test...| -3.5|
+|Trevor.Doshi@test...| -2.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 53
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -2.5|
+|Christina.Hansen@...| -1.0|
+|John.Howard@test.com| -4.0|
+|Danny.Howard@test...| -3.0|
+|Bobby.Harris@test...| -1.0|
+|Ashley.Habschied@...| -2.5|
+|Jason.Jackson@tes...|  5.0|
+|Christina.Fibonna...|-13.0|
+|Angie.Davis@test.com| -2.5|
+|Danny.Mitra@test.com|-26.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 54
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Sarah.Doshi@test.com|-24.5|
+|Neeraj.Gonzalez@t...| -5.5|
+|Sean.Harris@test.com| -5.0|
+|Chris.Jefferson@t...| 20.0|
+|  Dan.Jones@test.com|-17.0|
+|Bobby.Howard@test...|  5.5|
+|Craig.Ahmed@test.com| 18.0|
+|Spencer.Jones@tes...|-20.5|
+|Ben.Fibonnaci@tes...| 29.5|
+|Craig.Jefferson@t...| 14.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 55
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jacob.Jones@test.com|  7.0|
+|Gail.Staples@test...| -1.0|
+|Larry.Habschied@t...| -3.5|
+|Chris.Spencer@tes...| -4.5|
+|Ashley.Jones@test...| -4.0|
+|Trevor.Doshi@test...| -3.5|
+|Spencer.Staples@t...| -3.0|
+|Christina.Hansen@...| -1.5|
+|John.Howard@test.com| -1.5|
+|Danny.Howard@test...| -2.5|
+|Bobby.Harris@test...| -2.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 56
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Habschied@...| -3.5|
+|Jason.Jackson@tes...|  4.0|
+|Christina.Fibonna...|  1.0|
+|Angie.Davis@test.com| 11.0|
+|Danny.Mitra@test.com|-15.5|
+|Sarah.Doshi@test.com|  0.5|
+|Neeraj.Gonzalez@t...|  4.5|
+|Sean.Harris@test.com| -1.5|
+|Chris.Jefferson@t...| -0.5|
+|  Dan.Jones@test.com| -1.0|
+|Bobby.Howard@test...| -7.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 57
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Ahmed@test.com| 31.0|
+|Spencer.Jones@tes...|  5.0|
+|Ben.Fibonnaci@tes...| 13.5|
+|Craig.Jefferson@t...|-24.5|
+|Jacob.Jones@test.com|-13.5|
+|Gail.Staples@test...| -2.5|
+|Larry.Habschied@t...| -4.0|
+|Chris.Spencer@tes...| -4.5|
+|Ashley.Jones@test...| -4.5|
+|Trevor.Doshi@test...| -4.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 58
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Spencer.Staples@t...| -3.0|
+|Christina.Hansen@...| -4.5|
+|John.Howard@test.com|  0.0|
+|Danny.Howard@test...| -1.5|
+|Bobby.Harris@test...| -3.0|
+|Ashley.Habschied@...| -5.0|
+|Jason.Jackson@tes...|  9.5|
+|Christina.Fibonna...|  8.5|
+|Angie.Davis@test.com|-22.0|
+|Danny.Mitra@test.com|-11.5|
+|Sarah.Doshi@test.com| 23.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 59
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Neeraj.Gonzalez@t...|  1.0|
+|Sean.Harris@test.com|  0.0|
+|Chris.Jefferson@t...| 14.5|
+|  Dan.Jones@test.com| -8.5|
+|Bobby.Howard@test...|-19.5|
+|Craig.Ahmed@test.com| -7.5|
+|Spencer.Jones@tes...| 17.5|
+|Ben.Fibonnaci@tes...| -8.5|
+|Craig.Jefferson@t...|-29.0|
+|Jacob.Jones@test.com| -6.5|
+|Gail.Staples@test...| -3.5|
+|Larry.Habschied@t...| -3.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 60
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Chris.Spencer@tes...| -4.5|
+|Ashley.Jones@test...| -4.0|
+|Trevor.Doshi@test...| -3.0|
+|Spencer.Staples@t...| -4.0|
+|Christina.Hansen@...| -5.0|
+|John.Howard@test.com| -1.5|
+|Danny.Howard@test...| -1.0|
+|Bobby.Harris@test...| -3.5|
+|Ashley.Habschied@...| -5.0|
+|Jason.Jackson@tes...| -0.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 61
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Christina.Fibonna...|-22.5|
+|Angie.Davis@test.com| -5.5|
+|Danny.Mitra@test.com| 11.0|
+|Sarah.Doshi@test.com| -8.5|
+|Neeraj.Gonzalez@t...|-10.5|
+|Sean.Harris@test.com| -1.0|
+|Chris.Jefferson@t...| 35.0|
+|  Dan.Jones@test.com| 18.5|
+|Bobby.Howard@test...|  4.5|
+|Craig.Ahmed@test.com|-39.5|
+|Spencer.Jones@tes...| 11.0|
+|Ben.Fibonnaci@tes...|  0.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 62
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Craig.Jefferson@t...|  7.0|
+|Jacob.Jones@test.com|  9.0|
+|Gail.Staples@test...| -4.0|
+|Larry.Habschied@t...| -3.0|
+|Chris.Spencer@tes...| -4.0|
+|Ashley.Jones@test...| -4.5|
+|Trevor.Doshi@test...| -2.0|
+|Spencer.Staples@t...| -4.5|
+|Christina.Hansen@...| -2.5|
+|John.Howard@test.com| -4.0|
+|Danny.Howard@test...| -1.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 63
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Bobby.Harris@test...| -4.5|
+|Ashley.Habschied@...| -5.5|
+|Jason.Jackson@tes...|-14.5|
+|Christina.Fibonna...| -9.0|
+|Angie.Davis@test.com| 14.0|
+|Danny.Mitra@test.com| 25.0|
+|Sarah.Doshi@test.com| 30.0|
+|Neeraj.Gonzalez@t...| -9.0|
+|Sean.Harris@test.com| 11.0|
+|Chris.Jefferson@t...| -2.0|
+|  Dan.Jones@test.com| 23.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 64
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Bobby.Howard@test...| 27.0|
+|Craig.Ahmed@test.com|-14.0|
+|Spencer.Jones@tes...| 11.5|
+|Ben.Fibonnaci@tes...|  6.5|
+|Craig.Jefferson@t...| 27.5|
+|Jacob.Jones@test.com|  9.5|
+|Gail.Staples@test...| -3.0|
+|Larry.Habschied@t...| -2.5|
+|Chris.Spencer@tes...| -3.5|
+|Ashley.Jones@test...| -4.5|
+|Trevor.Doshi@test...| -2.0|
++--------------------+-----+
+
