@@ -1,0 +1,38 @@
+Vulnerability Analysis:
+
+IAM policy is not following the principle of least privilege, allowing full access to resources.
+This vulnerability indicates that the IAM policies are overly permissive, granting more privileges than necessary to perform specific actions. It increases the risk of unauthorized access or accidental misuse of resources.
+
+The use of a non-root account is not enforced.
+This vulnerability suggests that the root account, which has unrestricted access and control over the AWS environment, is being used instead of employing separate user accounts with limited privileges. This increases the risk of unauthorized access and compromises the security of the environment.
+
+CloudTrail Trail is not specified.
+This vulnerability implie s that CloudTrail, which provides auditing and monitoring capabilities for AWS API activity, is not configured. Without CloudTrail, it becomes challenging to track and investigate security incidents, potentially leaving the environment more vulnerable to unauthorized actions and compromises.
+
+Load balancer does not have HTTP->HTTPS redirection.
+This vulnerability indicates that the load balancer is not configured to redirect HTTP requests to HTTPS. Without this redirection, sensitive data transmitted over HTTP could be exposed to interception and potential attacks.
+
+VPC Security Groups allow all ingress and egress traffic, which violates the AWS recommendation.
+This vulnerability suggests that the security groups associated with the Virtual Private Cloud (VPC) are configured to permit all inbound and outbound traffic. This approach goes against the principle of least privilege and increases the attack surface, making it easier for unauthorized entities to access the resources.
+
+TCP port 5000 is reachable from the internet on the EC2 instance.
+This vulnerability signifies that the EC2 instance has an open TCP port (port 5000) accessible from the internet. Open ports can expose services and applications to potential attacks if they are not properly secured and monitored.
+
+Server-side encryption and logging are not enabled for S3 buckets.
+This vulnerability suggests that the S3 buckets storing data do not have server-side encryption and logging enabled. Without encryption, sensitive data is vulnerable to unauthorized access, and without logging, it becomes difficult to track access, changes, and potential security incidents.
+
+Recommendations for Remediation:
+
+Set IAM policies to follow the principle of least privilege, disallowing root user access and enforcing the use of multi-factor authentication (MFA). Review and refine the policies to grant only the necessary permissions for specific actions, resources, and roles.
+
+Create a CloudTrail trail that captures AWS API activity logs and stores them securely in an S3 bucket. Configure appropriate CloudTrail settings, including log file integrity validation and log file encryption, to enhance monitoring and auditing capabilities.
+
+Configure the Application Load Balancer to redirect all incoming HTTP requests to HTTPS. This ensures that data transmitted between clients and the load balancer remains encrypted, reducing the risk of information disclosure and unauthorized access.
+
+Update the VPC Security Group rules to follow the principle of least privilege. Restrict inbound and outbound traffic to only necessary ports (e.g., port 80 and 443 for HTTP and HTTPS), and reference other security groups instead of allowing all traffic. Regularly review and update security group rules to align with the organization's security requirements.
+
+Disable all non-essential ports on the EC2 instance, especially port 5000 if it's not required for any specific service. By closing unnecessary ports, the attack surface is reduced, limiting potential entry points for attackers.
+
+Enable server-side encryption for S3 buckets and configure it to enforce encryption on new objects. Additionally, enable S3 bucket logging to track access and changes to objects stored in the bucket. This enhances the security and auditability of data stored in S3.
+
+It is essential to note that the above recommendations serve as general guidelines. Actual remediation steps may vary based on

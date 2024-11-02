@@ -1,0 +1,54 @@
+ubuntu@ip-14-0-130-224:~$ mysql -u root -h udacity-pro1.cdjy764bhdou.us-east-1.rds.amazonaws.com -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 127
+Server version: 8.0.32 Source distribution
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| example            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use example;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select * from example_tmp;
++----+-----------+
+| id | message   |
++----+-----------+
+|  1 | message 1 |
++----+-----------+
+1 row in set (0.00 sec)
+
+mysql> insert into example_tmp(messsage) values ("message 2");
+ERROR 1054 (42S22): Unknown column 'messsage' in 'field list'
+mysql> insert into example_tmp(message) values ("message 2");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from example_tmp;
++----+-----------+
+| id | message   |
++----+-----------+
+|  1 | message 1 |
+|  2 | message 2 |
++----+-----------+
+2 rows in set (0.01 sec)
+
+mysql>

@@ -1,0 +1,22 @@
+1. Additional architectural change to reduce the internet-facing attack surface:
+
+- Introduce CloudFront as a front-end caching and content delivery service in front of the load balancer.
+
+- Implement a rule that restricts SSH access to instances only through AWS Systems Manager.
+This architectural change adds an additional layer of protection by leveraging CloudFront's caching capabilities and enforcing SSH access through AWS Systems Manager, which removes direct external access to the instances. This helps reduce the attack surface and strengthens security by controlling and monitoring access to the instances.
+
+2. Creating VPC private endpoints for S3 and insecure IAM permissions for the bucket:
+
+- Creating VPC private endpoints alone will not prevent unauthorized access to the secrets bucket. VPC endpoints enable private connectivity between the VPC and S3, but they do not control access to S3 resources.
+
+- To secure the S3 bucket and prevent unauthorized access, it is necessary to address the insecure IAM permissions by properly configuring access policies and granting least privilege permissions to authorized entities. Simply creating VPC private endpoints does not mitigate the risk of unauthorized access caused by insecure IAM permissions.
+
+3. Default encryption setting for S3 buckets and existing data:
+
+- Applying default encryption settings to S3 buckets will not encrypt the data that already exists in those buckets. Only new objects uploaded to the buckets after applying the default encryption settings will be encrypted automatically.
+- To encrypt existing data in S3 buckets, you would need to initiate a separate process to either manually encrypt the data or use AWS services/tools to perform bulk encryption operations on the existing objects.
+
+4. Impact of applying the original CloudFormation templates:
+
+- If the original CloudFormation templates are applied to the environment after making direct configuration changes through the AWS Management Console, it will result in a reset of the environment.
+- The CloudFormation templates define the desired state of the infrastructure. When applied, they will overwrite the current configuration, including any changes made directly through the console, with the configuration specified in the templates. Care should be taken to ensure that the CloudFormation templates are up to date and reflect the desired configuration to avoid unintended changes and disruptions to the environment.

@@ -1,0 +1,136 @@
+name: Azure Pipelines
+
+trigger:
+- main
+pool: myPool
+
+variables:
+  python.version: '3.7.6'
+  azureServiceConnectionId: '336ba999-91e6-441b-af93-0d280a702f5d'
+  projectRoot: $(System.DefaultWorkingDirectory)
+  environmentName: 'test'
+  serviceConnection: '336ba999-91e6-441b-af93-0d280a702f5d'
+
+
+stages:
+#--------------------------------------------#  
+# BUILD STAGE
+#--------------------------------------------#    
+- stage: Build
+  jobs:
+  - job: BuildInfrastructure
+    steps:
+      - task: TerraformInstaller@0
+        displayName: 'Install Terraform'
+        inputs:
+          terraformVersion: '0.13.5'
+      
+      - task: TerraformInstaller@0
+        displayName: 'Terraform Init'
+        inputs:
+          provider: 'azurerm'
+          command: 'init'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+          backendServiceArm: '$(terraformServiceConnection)'
+          backendAzureRmResourceGroupName: '$(terraformstoragerg)'
+          backendAzureRmStorageAccountName: '$(terraformstorageaccount)'
+          backendAzureRmContainerName: '$(terraformcontainer)'
+          backendAzureRmKey: 'terraform.tfstate'
+          terraformVersion: '0.13.5'
+
+      - task: TerraformInstaller@0
+        displayName: 'Terraform Apply'
+        inputs:
+          provider: 'azurerm'
+          command: 'apply'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+          commandOptions: '-auto-approve -var="public_key=$(myPublicKey))"'
+          environmentServiceNameAzureRM: '$(terraformServiceConnection)'
+
+      - task: ArchiveFiles@2
+        displayName: 'Archive FakeRestAPI Web App'
+        inputs:
+          rootFolderOrFile: '$(System.DefaultWorkingDirectory)/automatedtesting/jmeter/fakerestapi'
+          includeRootFolder: false
+          archiveType: 'zip'
+          archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-fakerestapi.zip'
+
+      - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-fakerestapi.zip
+        displayName: 'Upload Fakerestapi Package'
+        artifact: drop-fakerestapi
+      - task: ArchiveFiles@2
+        displayName: 'Archive Selenium Tests'
+        inputs:
+          rootFolderOrFile: 'automatedtesting/selenium'
+          includeRootFolder: false
+          archiveType: 'zip'
+          archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-selenium.zip'
+      - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-selenium.zip
+        displayName: 'Upload Selenium Package'
+        artifact: selenium
+
+- stage: WebAppDeployment
+  displayName: Web App Deployment
+  jobs:
+  - deployment: FakeRestAPI
+    pool: myPool
+    environment: 'WAP-TEST'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            displayName: 'Deploy Azure Web App'
+            inputs:
+              azureSubscription: '$(serviceConnection)'
+              appType: 'webApp'
+              appName: 'fakeapiappkaizen'
+              package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
+              deploymentMethod: 'auto'
+
+- stage: Tests
+  jobs: 
+    - job: Tests
+      pool: myPool
+      displayName: 'Tests'
+      steps:
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            script: |
+              newman run ./automatedtesting/postman/testapi.postman_collection.json --reporters cli,junit --reporter-junit-export ./regressiontest.xml --suppress-exit-code
+          displayName: 'Run Newman Regression Test'
+        - task: PublishTestResults@2
+          inputs:
+            testResultsFiles: '$(System.DefaultWorkingDirectory)/*.xml'
+            searchFolder: '$(System.DefaultWorkingDirectory)'
+          displayName: 'Publish Test Results'
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            script: |
+              ~/apache-jmeter-5.6.3/bin/jmeter -n -t ./automatedtesting/jmeter/stress_test.jmx -l ./automatedtesting/jmeter/stress_test_result.csv -e -o ./automatedtesting/jmeter/stress_test_html_report/ -j ./automatedtesting/jmeter/jmeter_stress_test.log
+          displayName: 'Jmeter Stress Test' 
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            script: |
+              ~/apache-jmeter-5.6.3/bin/jmeter -n -t ./automatedtesting/jmeter/endurance_test.jmx -l ./automatedtesting/jmeter/Endurance_test_result.csv -e -o ./automatedtesting/jmeter/Endurance_test_html_report/ -j ./automatedtesting/jmeter/jmeter_endurance_test.log
+          displayName: 'Jmeter Endurance Test' 
+        - task: PublishBuildArtifacts@1
+          inputs:
+            PathtoPublish: 'automatedtesting/jmeter'
+            ArtifactName: 'jmeter'
+            publishLocation: 'Container'
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            script: |
+              if [ ! -d /var/log/selenium ]; then
+                sudo mkdir /var/log/selenium
+                sudo chmod 777 /var/log/selenium
+              fi
+              cd ./automatedtesting/selenium
+              python3 login.py
+          displayName: 'Run UI Test'
+

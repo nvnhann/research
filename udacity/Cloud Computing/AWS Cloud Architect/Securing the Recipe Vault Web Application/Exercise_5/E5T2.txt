@@ -1,0 +1,30 @@
+Tools for Scanning Infrastructure as Code Templates:
+
+- Regula: A tool for enforcing infrastructure as code security policies. It scans Terraform, CloudFormation, and Kubernetes files for misconfigurations and policy violations. (Link: https://github.com/fugue/regula).
+
+- Terrascan: Specifically designed for Terraform templates, Terrascan scans IaC files to detect security vulnerabilities and compliance violations. (Link: https://github.com/accurics/terrascan)
+
+- Chef InSpec: It allows you to write tests to validate the compliance of your infrastructure code and configurations against predefined security policies. (Link: https://github.com/inspec/inspec)
+
+Example Vulnerabilities for Infrastructure as Code Templates:
+
+- Server Side Encryption (SSE) not enabled: This vulnerability indicates that data at rest is not encrypted, potentially exposing sensitive information to unauthorized access.
+- Access logs not enabled for resources: This vulnerability implies that access logs, which provide valuable audit information, are not enabled for the relevant resources, hindering incident response and investigation.
+
+Tools for Scanning AMIs or Containers for OS Vulnerabilities:
+
+- Ansible: Ansible can be used to automate the scanning of AMIs or containers for OS vulnerabilities by running security-focused modules and playbooks against them.
+Example Vulnerability for AMIs or Containers:
+
+- SSH root access with password logon: This vulnerability indicates that the root user can access the system using a password for SSH authentication, which poses a security risk. It is recommended to disable root login or enforce key-based authentication.
+
+Tools for Scanning AWS Environment for Cloud Configuration Vulnerabilities:
+
+- AWS Config: It continuously assesses AWS resource configurations against desired rules to identify non-compliant resources and configuration vulnerabilities.
+- AWS Inspector: It analyzes the AWS environment and provides insights into the vulnerability and security posture of EC2 instances, applications, and networks.
+- AWS GuardDuty: A threat detection service that analyzes AWS logs and events to detect unauthorized access, malicious activities, and potential security threats.
+Example Vulnerabilities for AWS Environment:
+
+- IAM role assigned a policy that allows admin access: This vulnerability suggests that an IAM role has been granted excessive privileges, potentially leading to unauthorized access and compromise of AWS resources.
+- s3-bucket-server-side-encryption: This vulnerability indicates that server-side encryption is not enabled for an S3 bucket, leaving the data stored in the bucket unprotected.
+- UnauthorizedAccess:EC2/SSHBruteForce: This finding indicates that an EC2 instance is being targeted by SSH brute force attacks, which can lead to unauthorized access and compromise of the instance.

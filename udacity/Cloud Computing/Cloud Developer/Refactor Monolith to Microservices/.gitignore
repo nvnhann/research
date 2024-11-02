@@ -1,0 +1,6 @@
+set_env.sh
+*node_modules*
+*aws-secret*
+*env-secret*
+*env-configmap*
+*aws-secret*

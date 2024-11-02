@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="testapi" tests="4" time="2.626">
+  <testsuite name="Create Post" id="d7c11b73-fa9a-474d-be80-a7a1214467f6" timestamp="2024-04-04T15:24:49.747Z" tests="2" failures="0" errors="0" time="1.222">
+    <testcase name="Successful response" time="1.222" classname="Testapi"/>
+    <testcase name="Status code is 201" time="1.222" classname="Testapi"/>
+  </testsuite>
+  <testsuite name="Get All Post" id="499c25ab-b037-4d22-94c8-076843105cbc" timestamp="2024-04-04T15:24:49.747Z" tests="2" failures="0" errors="0" time="0.153">
+    <testcase name="Successful response" time="0.153" classname="Testapi"/>
+    <testcase name="Status code is 200" time="0.153" classname="Testapi"/>
+  </testsuite>
+  <testsuite name="Update Posts" id="bf837d71-960f-419d-a61d-b3e29b12b432" timestamp="2024-04-04T15:24:49.747Z" tests="2" failures="0" errors="0" time="0.860">
+    <testcase name="Successful response" time="0.860" classname="Testapi"/>
+    <testcase name="Status code is 200" time="0.860" classname="Testapi"/>
+  </testsuite>
+  <testsuite name="Delete employee" id="7f4df8f5-91d8-4c0d-a1cb-005be81bbc26" timestamp="2024-04-04T15:24:49.747Z" tests="2" failures="0" errors="0" time="0.391">
+    <testcase name="Successful response" time="0.391" classname="Testapi"/>
+    <testcase name="Status code is 200" time="0.391" classname="Testapi"/>
+  </testsuite>
+</testsuites>

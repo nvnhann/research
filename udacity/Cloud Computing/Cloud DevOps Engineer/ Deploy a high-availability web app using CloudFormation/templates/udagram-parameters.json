@@ -1,0 +1,18 @@
+[
+    {
+        "ParameterKey": "ProjectName",
+        "ParameterValue": "IaC"
+    },
+    {
+        "ParameterKey": "VolumeSize",
+        "ParameterValue": "10"
+    },
+	{
+		"ParameterKey": "KeyPairName",
+		"ParameterValue": "nvnhan"
+	},
+    {
+        "ParameterKey": "ImageId",
+        "ParameterValue": "ami-0075013580f6322a1"
+    }
+]

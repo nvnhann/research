@@ -1,0 +1,352 @@
+# azurerm_availability_set.main:
+resource "azurerm_availability_set" "main" {
+    id                           = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Compute/availabilitySets/Azuredevops-aset"
+    location                     = "westeurope"
+    managed                      = true
+    name                         = "Azuredevops-aset"
+    platform_fault_domain_count  = 2
+    platform_update_domain_count = 5
+    resource_group_name          = "Azuredevops-rg"
+    tags                         = {
+        "environment" = "test"
+    }
+}
+
+# azurerm_lb.main:
+resource "azurerm_lb" "main" {
+    id                   = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb"
+    location             = "westeurope"
+    name                 = "Azuredevops-lb"
+    private_ip_addresses = []
+    resource_group_name  = "Azuredevops-rg"
+    sku                  = "Basic"
+    sku_tier             = "Regional"
+    tags                 = {
+        "environment" = "test"
+    }
+
+    frontend_ip_configuration {
+        id                            = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb/frontendIPConfigurations/PublicIPAddress"
+        inbound_nat_rules             = []
+        load_balancer_rules           = []
+        name                          = "PublicIPAddress"
+        outbound_rules                = []
+        private_ip_address_allocation = "Dynamic"
+        public_ip_address_id          = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/publicIPAddresses/Azuredevops-publicIp"
+    }
+}
+
+# azurerm_lb_backend_address_pool.main:
+resource "azurerm_lb_backend_address_pool" "main" {
+    backend_ip_configurations = []
+    id                        = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb/backendAddressPools/BackEndAddressPool"
+    inbound_nat_rules         = []
+    load_balancing_rules      = []
+    loadbalancer_id           = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb"
+    name                      = "BackEndAddressPool"
+    outbound_rules            = []
+}
+
+# azurerm_linux_virtual_machine.main[0]:
+resource "azurerm_linux_virtual_machine" "main" {
+    admin_password                                         = (sensitive value)
+    admin_username                                         = "udacity"
+    allow_extension_operations                             = true
+    availability_set_id                                    = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Compute/availabilitySets/AZUREDEVOPS-ASET"
+    bypass_platform_safety_checks_on_user_schedule_enabled = false
+    computer_name                                          = "Azuredevops-vm-uat"
+    disable_password_authentication                        = false
+    encryption_at_host_enabled                             = false
+    extensions_time_budget                                 = "PT1H30M"
+    id                                                     = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Compute/virtualMachines/Azuredevops-vm-uat"
+    location                                               = "westeurope"
+    max_bid_price                                          = -1
+    name                                                   = "Azuredevops-vm-uat"
+    network_interface_ids                                  = [
+        "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-uat",
+    ]
+    patch_assessment_mode                                  = "ImageDefault"
+    patch_mode                                             = "ImageDefault"
+    platform_fault_domain                                  = -1
+    priority                                               = "Regular"
+    private_ip_address                                     = "10.0.0.4"
+    private_ip_addresses                                   = [
+        "10.0.0.4",
+    ]
+    provision_vm_agent                                     = true
+    public_ip_addresses                                    = []
+    resource_group_name                                    = "Azuredevops-rg"
+    secure_boot_enabled                                    = false
+    size                                                   = "Standard_D2s_v3"
+    source_image_id                                        = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops/providers/Microsoft.Compute/images/PackerImage"
+    tags                                                   = {
+        "environment" = "test"
+        "name"        = "uat"
+    }
+    virtual_machine_id                                     = "5da8b83c-7131-42c9-8c99-7518fd6040c8"
+    vm_agent_platform_updates_enabled                      = false
+    vtpm_enabled                                           = false
+
+    os_disk {
+        caching                   = "ReadWrite"
+        disk_size_gb              = 30
+        name                      = "Azuredevops-vm-uat_disk1_9b510b4b9bc54b6ca81240ba7001edf1"
+        storage_account_type      = "Standard_LRS"
+        write_accelerator_enabled = false
+    }
+}
+
+# azurerm_linux_virtual_machine.main[1]:
+resource "azurerm_linux_virtual_machine" "main" {
+    admin_password                                         = (sensitive value)
+    admin_username                                         = "udacity"
+    allow_extension_operations                             = true
+    availability_set_id                                    = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Compute/availabilitySets/AZUREDEVOPS-ASET"
+    bypass_platform_safety_checks_on_user_schedule_enabled = false
+    computer_name                                          = "Azuredevops-vm-int"
+    disable_password_authentication                        = false
+    encryption_at_host_enabled                             = false
+    extensions_time_budget                                 = "PT1H30M"
+    id                                                     = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Compute/virtualMachines/Azuredevops-vm-int"
+    location                                               = "westeurope"
+    max_bid_price                                          = -1
+    name                                                   = "Azuredevops-vm-int"
+    network_interface_ids                                  = [
+        "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-int",
+    ]
+    patch_assessment_mode                                  = "ImageDefault"
+    patch_mode                                             = "ImageDefault"
+    platform_fault_domain                                  = -1
+    priority                                               = "Regular"
+    private_ip_address                                     = "10.0.0.5"
+    private_ip_addresses                                   = [
+        "10.0.0.5",
+    ]
+    provision_vm_agent                                     = true
+    public_ip_addresses                                    = []
+    resource_group_name                                    = "Azuredevops-rg"
+    secure_boot_enabled                                    = false
+    size                                                   = "Standard_D2s_v3"
+    source_image_id                                        = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops/providers/Microsoft.Compute/images/PackerImage"
+    tags                                                   = {
+        "environment" = "test"
+        "name"        = "int"
+    }
+    virtual_machine_id                                     = "e7288c4a-bbfe-49f4-afdd-ad3531f17d10"
+    vm_agent_platform_updates_enabled                      = false
+    vtpm_enabled                                           = false
+
+    os_disk {
+        caching                   = "ReadWrite"
+        disk_size_gb              = 30
+        name                      = "Azuredevops-vm-int_disk1_d5ca44edbb854f91a6b574aca3c92a0e"
+        storage_account_type      = "Standard_LRS"
+        write_accelerator_enabled = false
+    }
+}
+
+# azurerm_managed_disk.main:
+resource "azurerm_managed_disk" "main" {
+    create_option                     = "Empty"
+    disk_iops_read_only               = 0
+    disk_iops_read_write              = 500
+    disk_mbps_read_only               = 0
+    disk_mbps_read_write              = 60
+    disk_size_gb                      = 1
+    id                                = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Compute/disks/Azuredevops-md"
+    location                          = "westeurope"
+    max_shares                        = 0
+    name                              = "Azuredevops-md"
+    on_demand_bursting_enabled        = false
+    optimized_frequent_attach_enabled = false
+    performance_plus_enabled          = false
+    public_network_access_enabled     = true
+    resource_group_name               = "Azuredevops-rg"
+    storage_account_type              = "Standard_LRS"
+    tags                              = {
+        "environment" = "test"
+    }
+    trusted_launch_enabled            = false
+    upload_size_bytes                 = 0
+}
+
+# azurerm_network_interface.main[0]:
+resource "azurerm_network_interface" "main" {
+    applied_dns_servers           = []
+    dns_servers                   = []
+    enable_accelerated_networking = false
+    enable_ip_forwarding          = false
+    id                            = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-uat"
+    internal_domain_name_suffix   = "wrn1ypllq2eu5ehb5tquizefia.ax.internal.cloudapp.net"
+    location                      = "westeurope"
+    name                          = "Azuredevops-nic-uat"
+    private_ip_address            = "10.0.0.4"
+    private_ip_addresses          = [
+        "10.0.0.4",
+    ]
+    resource_group_name           = "Azuredevops-rg"
+    tags                          = {
+        "environment" = "test"
+    }
+
+    ip_configuration {
+        name                          = "testConfiguration"
+        primary                       = true
+        private_ip_address            = "10.0.0.4"
+        private_ip_address_allocation = "Dynamic"
+        private_ip_address_version    = "IPv4"
+        subnet_id                     = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/virtualNetworks/Azuredevops-network/subnets/Azuredevops-subnet"
+    }
+}
+
+# azurerm_network_interface.main[1]:
+resource "azurerm_network_interface" "main" {
+    applied_dns_servers           = []
+    dns_servers                   = []
+    enable_accelerated_networking = false
+    enable_ip_forwarding          = false
+    id                            = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-int"
+    internal_domain_name_suffix   = "wrn1ypllq2eu5ehb5tquizefia.ax.internal.cloudapp.net"
+    location                      = "westeurope"
+    name                          = "Azuredevops-nic-int"
+    private_ip_address            = "10.0.0.5"
+    private_ip_addresses          = [
+        "10.0.0.5",
+    ]
+    resource_group_name           = "Azuredevops-rg"
+    tags                          = {
+        "environment" = "test"
+    }
+
+    ip_configuration {
+        name                          = "testConfiguration"
+        primary                       = true
+        private_ip_address            = "10.0.0.5"
+        private_ip_address_allocation = "Dynamic"
+        private_ip_address_version    = "IPv4"
+        subnet_id                     = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/virtualNetworks/Azuredevops-network/subnets/Azuredevops-subnet"
+    }
+}
+
+# azurerm_network_interface_backend_address_pool_association.main[0]:
+resource "azurerm_network_interface_backend_address_pool_association" "main" {
+    backend_address_pool_id = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb/backendAddressPools/BackEndAddressPool"
+    id                      = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-uat/ipConfigurations/testConfiguration|/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb/backendAddressPools/BackEndAddressPool"
+    ip_configuration_name   = "testConfiguration"
+    network_interface_id    = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-uat"
+}
+
+# azurerm_network_interface_backend_address_pool_association.main[1]:
+resource "azurerm_network_interface_backend_address_pool_association" "main" {
+    backend_address_pool_id = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb/backendAddressPools/BackEndAddressPool"
+    id                      = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-int/ipConfigurations/testConfiguration|/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/loadBalancers/Azuredevops-lb/backendAddressPools/BackEndAddressPool"
+    ip_configuration_name   = "testConfiguration"
+    network_interface_id    = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkInterfaces/Azuredevops-nic-int"
+}
+
+# azurerm_network_security_group.main:
+resource "azurerm_network_security_group" "main" {
+    id                  = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/networkSecurityGroups/Azuredevops-nsg"
+    location            = "westeurope"
+    name                = "Azuredevops-nsg"
+    resource_group_name = "Azuredevops-rg"
+    security_rule       = [
+        {
+            access                                     = "Allow"
+            description                                = "Allow access to other VMs on the subnet"
+            destination_address_prefix                 = "VirtualNetwork"
+            destination_address_prefixes               = []
+            destination_application_security_group_ids = []
+            destination_port_range                     = "*"
+            destination_port_ranges                    = []
+            direction                                  = "Inbound"
+            name                                       = "AllowVnetInBound"
+            priority                                   = 101
+            protocol                                   = "*"
+            source_address_prefix                      = "VirtualNetwork"
+            source_address_prefixes                    = []
+            source_application_security_group_ids      = []
+            source_port_range                          = "*"
+            source_port_ranges                         = []
+        },
+        {
+            access                                     = "Deny"
+            description                                = "Deny all inbound traffic outside of the vnet from the Internet"
+            destination_address_prefix                 = "VirtualNetwork"
+            destination_address_prefixes               = []
+            destination_application_security_group_ids = []
+            destination_port_range                     = "*"
+            destination_port_ranges                    = []
+            direction                                  = "Inbound"
+            name                                       = "DenyInternetInBound"
+            priority                                   = 100
+            protocol                                   = "*"
+            source_address_prefix                      = "Internet"
+            source_address_prefixes                    = []
+            source_application_security_group_ids      = []
+            source_port_range                          = "*"
+            source_port_ranges                         = []
+        },
+    ]
+    tags                = {
+        "environment" = "test"
+    }
+}
+
+# azurerm_public_ip.main:
+resource "azurerm_public_ip" "main" {
+    allocation_method       = "Static"
+    ddos_protection_mode    = "VirtualNetworkInherited"
+    id                      = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/publicIPAddresses/Azuredevops-publicIp"
+    idle_timeout_in_minutes = 4
+    ip_address              = "13.93.11.11"
+    ip_version              = "IPv4"
+    location                = "westeurope"
+    name                    = "Azuredevops-publicIp"
+    resource_group_name     = "Azuredevops-rg"
+    sku                     = "Basic"
+    sku_tier                = "Regional"
+    tags                    = {
+        "environment" = "test"
+    }
+}
+
+# azurerm_resource_group.main:
+resource "azurerm_resource_group" "main" {
+    id       = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg"
+    location = "westeurope"
+    name     = "Azuredevops-rg"
+}
+
+# azurerm_subnet.main:
+resource "azurerm_subnet" "main" {
+    address_prefixes                               = [
+        "10.0.0.0/24",
+    ]
+    enforce_private_link_endpoint_network_policies = false
+    enforce_private_link_service_network_policies  = false
+    id                                             = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/virtualNetworks/Azuredevops-network/subnets/Azuredevops-subnet"
+    name                                           = "Azuredevops-subnet"
+    private_endpoint_network_policies_enabled      = true
+    private_link_service_network_policies_enabled  = true
+    resource_group_name                            = "Azuredevops-rg"
+    virtual_network_name                           = "Azuredevops-network"
+}
+
+# azurerm_virtual_network.main:
+resource "azurerm_virtual_network" "main" {
+    address_space           = [
+        "10.0.0.0/16",
+    ]
+    dns_servers             = []
+    flow_timeout_in_minutes = 0
+    guid                    = "3dbc5bb4-876b-4f09-90e1-fce144648540"
+    id                      = "/subscriptions/630a1e98-7922-4c13-9488-39768dd9328d/resourceGroups/Azuredevops-rg/providers/Microsoft.Network/virtualNetworks/Azuredevops-network"
+    location                = "westeurope"
+    name                    = "Azuredevops-network"
+    resource_group_name     = "Azuredevops-rg"
+    subnet                  = []
+    tags                    = {
+        "environment" = "test"
+    }
+}
