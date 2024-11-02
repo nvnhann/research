@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="modal-footer" th:fragment="footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button
+            type="button"
+            class="btn btn-primary"
+            onclick="document.getElementById('note-form').submit();"
+            id="noteSubmit"
+    >
+        Save changes
+    </button>
+</div>
+
+<div class="modal-header" th:fragment="header">
+    <h5 class="modal-title" id="noteModalLabel">Note</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<form
+        th:object="${userNote}"
+        th:action="@{/notes/note}"
+        action="#"
+        method="POST"
+        id="note-form"
+        th:fragment="form"
+>
+
+    <input
+            type="hidden"
+            name="noteId"
+            id="note-id"
+            th:field="*{noteId}"
+    >
+    <div class="mb-3">
+        <label for="note-title" class="col-form-label">Title</label>
+        <input
+                type="text"
+                name="noteTitle"
+                class="form-control"
+                id="note-title"
+                maxlength="20"
+                required
+                th:field="*{noteTitle}"
+        >
+    </div>
+    <div class="mb-3">
+        <label for="note-description" class="col-form-label">Description</label>
+        <textarea
+                class="form-control"
+                name="noteDescription"
+                id="note-description"
+                rows="5"
+                maxlength="1000"
+                required
+                th:field="*{noteDescription}"
+        ></textarea>
+    </div>
+    <button type="submit" class="d-none"></button>
+</form>
+</body>
+</html>

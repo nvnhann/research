@@ -1,0 +1,99 @@
+/* style.css */
+
+/* Global styles */
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#app {
+  padding: 5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.headline {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.holder {
+  margin-bottom: 20px;
+}
+
+.zip label,
+.feel label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.zip input[type="text"],
+.feel textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Prevent resizing of the textarea */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.zip input[type="text"]:focus,
+.feel textarea:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #007bff; /* Change the border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+}
+
+.zip input[type="text"]::placeholder,
+.feel textarea::placeholder {
+  line-height: 1.5; /* Adjust the line height for the placeholder text */
+  color: #999; /* Customize the color of the placeholder text */
+}
+
+#generate {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Entry styles */
+.entry {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#entryHolder {
+  margin-top: 10px;
+}
+
+#date,
+#temp,
+#content {
+  margin-bottom: 5px;
+}

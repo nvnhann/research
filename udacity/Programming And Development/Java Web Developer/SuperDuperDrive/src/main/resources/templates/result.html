@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/bootstrap.min.css}">
+
+    <title>Result</title>
+</head>
+<body class="p-3 mb-2 bg-light text-black" onload="appendHashToLinks()">
+<div class="container w-50 p-3 mt-5">
+    <div class="alert alert-success" th:if="${isSuccess}">
+        <h1 class="display-5">Success</h1>
+        <span>
+            Your changes were successfully saved. Click <a id="success" th:href="@{/home}">here</a> to continue.
+        </span>
+    </div>
+    <div class="alert alert-danger" th:if="${not isSuccess} and ${errorType == 1}">
+        <h1 class="display-5">Error</h1>
+        <span>Your changes were not saved. Click <a th:href="@{/home}">here</a> to continue.</span>
+    </div>
+    <div class="alert alert-danger" th:if="${not isSuccess} and ${errorType == 2}">
+        <h1 class="display-5">Error</h1>
+        <span>File name is existed!. Click <a th:href="@{/home}">here</a> to continue.</span>
+    </div>
+    <div class="alert alert-danger" th:if="${not isSuccess} and ${errorType != 1} and ${errorType != 2}">
+        <h1 class="display-5">Error</h1>
+        <span>Example Error Message. Click <a th:href="@{/home}">here</a> to continue.</span>
+    </div>
+</div>
+</body>
+<script th:inline="javascript">
+    // JavaScript function to append hash to hrefs
+    function appendHashToLinks() {
+        var hash = window.location.hash;
+        if (hash) {
+            var links = document.querySelectorAll('a[href="/home"]');
+            links.forEach(function(link) {
+                link.href = link.href + hash;
+            });
+        }
+    }
+</script>
+</html>

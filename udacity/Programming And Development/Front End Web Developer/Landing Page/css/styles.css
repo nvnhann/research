@@ -1,0 +1,854 @@
+/* Base Rules */
+body {
+  background: rgb(136, 203, 171);
+  background: linear-gradient(
+    0deg,
+    rgba(136, 203, 171, 1) 0%,
+    rgba(0, 13, 60, 1) 100%
+  );
+  margin: 0;
+  font-family:/* Base Rules */
+  body {
+    background: rgb(136, 203, 171);
+    background: linear-gradient(
+      0deg,
+      rgba(136, 203, 171, 1) 0%,
+      rgba(0, 13, 60, 1) 100%
+    );
+    margin: 0;
+    font-family: "Merriweather", serif;
+    color: #fff;
+  }
+  
+  h1 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+  }
+  
+  @media only screen and (min-width: 35em) {
+    h1 {
+      font-size: 7em;
+      margin: 2em 4rem 1em;
+    }
+  }
+  
+  h2 {
+    border-bottom: 1px solid #cc1;
+    font-family: "Oxygen", Sans-Serif;
+    font-size: 3em;
+    color: #fff;
+  }
+  
+  p {
+    line-height: 1.6em;
+    color: #eee;
+  }
+  
+  /* Layout Rules */
+  main {
+    margin: 10vh 1em 10vh;
+  }
+  
+  .main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+  }
+  
+  section {
+    position: relative;
+    min-height: 80vh;
+  }
+  
+  /* Module Rules */
+  
+  /* Navigation Styles */
+  .navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .navbar__menu li {
+    display: inline-block;
+  }
+  
+  .navbar__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .navbar__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+  }
+  
+  /* Header Styles */
+  .page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  /* Footer Styles */
+  .page__footer {
+    background: #000;
+    padding: 3em;
+    color: #fff;
+  }
+  
+  .page__footer p {
+    color: #fff;
+  }
+  
+  /* Theme Rules */
+  /* Landing Container Styles */
+  .landing__container {
+    padding: 1em;
+    text-align: left;
+  }
+  
+  @media only screen and (min-width: 35em) {
+    .landing__container {
+      max-width: 50em;
+      padding: 4em;
+    }
+  }
+  
+  section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  /* Background Circles */
+  section:nth-of-type(odd) .landing__container::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.187);
+    position: absolute;
+    z-index: -5;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+  }
+  
+  section:nth-of-type(even) .landing__container::before {
+    content: "";
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 255, 255, 0.2) 100%
+    );
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+  }
+  
+  section:nth-of-type(3n) .landing__container::after {
+    content: "";
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+  }
+  
+  section:nth-of-type(3n + 1) .landing__container::after {
+    content: "";
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    position: absolute;
+    right: 20vw;
+    bottom: -5em;
+    z-index: -5;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+  }
+  
+  /* Theme State Rules */
+  /* Section Active Styles */
+  section.your-active-class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  
+  section.your-active-class .landing__container::before {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+  }
+  
+  section.your-active-class .landing__container::after {
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+  }
+  
+  /* Section Active Styles Keyframe Animations */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+  }
+  
+  /* Add your CSS styles for the page layout, responsiveness, and active states here */
+  
+  /* Reset default margin and padding */
+  body,
+  h1,
+  h2,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set box-sizing to border-box for all elements */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: "Fira Sans", sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .page__header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .page__header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar__menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar__menu li {
+    margin-right: 10px;
+  }
+  
+  .navbar__menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .main__hero {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .main__hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .landing__container {
+    padding: 50px 0;
+  }
+  
+  .landing__container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .page__footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Active state styles */
+  .your-active-class {
+    background-color: #f0f0f0;
+  }
+  
+  .navbar__menu li a.active {
+    font-weight: bold;
+  }
+  
+  .navbar__toggle {
+    display: none;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar__toggle .nav {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+  }
+  
+  .navbar__toggle .nav .item1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar__toggle .nav .item2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navbar__toggle .nav .item3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .main__hero h1 {
+      font-size: 24px;
+    }
+  
+    .landing__container h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .main__hero h1 {
+      font-size: 24px;
+    }
+  
+    .landing__container h2 {
+      font-size: 20px;
+    }
+  
+    .page__header {
+      height: 60px;
+    }
+  
+    .navbar__menu ul {
+      display: none;
+      transition: transform 0.5s ease-in-out;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      padding: 10px;
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .navbar__menu.open ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .navbar__menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .navbar__menu li a {
+      display: block;
+      padding: 5px;
+      color: #fff;
+    }
+  
+    .navbar__toggle {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .navbar__menu ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .navbar__menu li {
+      margin-right: 10px;
+    }
+  }
+   "Merriweather", serif;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3em;
+  margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: 7em;
+    margin: 2em 4rem 1em;
+  }
+}
+
+h2 {
+  border-bottom: 1px solid #cc1;
+  font-family: "Oxygen", Sans-Serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
+}
+
+/* Layout Rules */
+main {
+  margin: 10vh 1em 10vh;
+}
+
+.main-hero {
+  min-height: 40vh;
+  padding-top: 3em;
+}
+
+section {
+  position: relative;
+  min-height: 80vh;
+}
+
+/* Module Rules */
+
+/* Navigation Styles */
+.navbar__menu ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.navbar__menu li {
+  display: inline-block;
+}
+
+.navbar__menu .menu__link {
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__menu .menu__link:hover {
+  background: #333;
+  color: #fff;
+  transition: ease 0.3s all;
+}
+
+/* Header Styles */
+.page__header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* Footer Styles */
+.page__footer {
+  background: #000;
+  padding: 3em;
+  color: #fff;
+}
+
+.page__footer p {
+  color: #fff;
+}
+
+/* Theme Rules */
+/* Landing Container Styles */
+.landing__container {
+  padding: 1em;
+  text-align: left;
+}
+
+@media only screen and (min-width: 35em) {
+  .landing__container {
+    max-width: 50em;
+    padding: 4em;
+  }
+}
+
+section:nth-of-type(even) .landing__container {
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Background Circles */
+section:nth-of-type(odd) .landing__container::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.187);
+  position: absolute;
+  z-index: -5;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  opacity: 0;
+  transition: ease 0.5s all;
+}
+
+section:nth-of-type(even) .landing__container::before {
+  content: "";
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 255, 255, 0.2) 100%
+  );
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  z-index: -5;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  opacity: 0;
+  transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n) .landing__container::after {
+  content: "";
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  opacity: 0;
+  transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n + 1) .landing__container::after {
+  content: "";
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  position: absolute;
+  right: 20vw;
+  bottom: -5em;
+  z-index: -5;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  opacity: 0;
+  transition: ease 0.5s all;
+}
+
+/* Theme State Rules */
+/* Section Active Styles */
+section.your-active-class {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+section.your-active-class .landing__container::before {
+  opacity: 1;
+  animation: rotate 4s linear 0s infinite forwards;
+}
+
+section.your-active-class .landing__container::after {
+  opacity: 1;
+  animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+/* Section Active Styles Keyframe Animations */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(-1em) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-1em) rotate(-360deg);
+  }
+}
+
+/* Add your CSS styles for the page layout, responsiveness, and active states here */
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page__header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.page__header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar__menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__menu li {
+  margin-right: 10px;
+}
+
+.navbar__menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.main__hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main__hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.landing__container {
+  padding: 50px 0;
+}
+
+.landing__container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page__footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Active state styles */
+.your-active-class {
+  background-color: #f0f0f0;
+}
+
+
+.navbar__menu li a.active {
+  font-weight: bold;
+  color: yellow;
+}
+
+.navbar__toggle {.navbar__menu li a
+  display: none;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar__toggle .nav {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+.navbar__toggle .nav .item1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar__toggle .nav .item2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar__toggle .nav .item3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .main__hero h1 {
+    font-size: 24px;
+  }
+
+  .landing__container h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .main__hero h1 {
+    font-size: 24px;
+  }
+
+  .landing__container h2 {
+    font-size: 20px;
+  }
+
+  .page__header {
+    height: 60px;
+  }
+
+  .navbar__menu ul {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar__menu.open ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar__menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar__menu li a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar__menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar__menu li {
+    margin-right: 10px;
+  }
+}

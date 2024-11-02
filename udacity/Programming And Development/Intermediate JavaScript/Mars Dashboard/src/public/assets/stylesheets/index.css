@@ -1,0 +1,128 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+header {
+  /* header styles */
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.nav-collapse {
+  display: flex;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: 14px;
+  color: #666;
+}
+
+#section {
+  grid-template-columns: repeat(4, 1fr); /* Mặc định hiển thị 4 cột */
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (max-width: 768px) {
+  /* use mobile */
+  #section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .css1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    height: 32vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .css2, .css3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav > div,
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+}

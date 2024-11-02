@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 10px 0 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  border-left: 15px solid #6c757d;
+  border-right: 2px solid #6c757d;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+
+blockquote::after {
+  content: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #999;
+  border: none;
+  margin: 20px 0;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+}
+
+figcaption.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}

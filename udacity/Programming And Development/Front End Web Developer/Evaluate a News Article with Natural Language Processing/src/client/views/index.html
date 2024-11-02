@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>NLP Evaluate</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">NhanNV13</div>
+    </header>
+
+    <main>
+      <section>
+        <input
+          id="title"
+          type="text"
+          name="title"
+          value=""
+          placeholder="Title"
+        />
+        <button id="submit">Submit</button>
+      </section>
+
+      <section>
+        <strong>Form Results:</strong>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p class="name">Nguyễn Văn Nhẫn</p>
+        <p class="email">NhanNV13@fpt.com</p>
+      </div>
+    </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .then((reg) => console.log("Service Worker: Registered"))
+            .catch((err) => console.log("Error ==>> " + err));
+        });
+      }
+    </script>
+  </body>
+</html>

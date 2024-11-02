@@ -1,0 +1,39 @@
+/* add your CSS here */
+body, hrml{
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+  height: auto; 
+}
+main{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0
+}
+.container{
+  width: 400px;
+  border: 2px solid rgb(203, 213, 222); /* Set the border properties */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.container p{
+  text-align: justify;
+}
+
+.content{
+  border: 2px solid rgb(203, 213, 222); /* Set the border properties */
+  border-radius: 10px;
+  padding: 5px
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li span{
+  font-weight: bold;
+}

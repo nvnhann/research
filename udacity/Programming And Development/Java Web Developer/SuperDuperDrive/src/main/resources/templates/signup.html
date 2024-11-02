@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
+
+    <title>Sign Up</title>
+</head>
+<body>
+<div class="container">
+    <div class="form-group">
+        <a th:href="@{/login}" class="btn btn-link"><i class="fas fa-arrow-left"></i> Back to Login</a>
+    </div>
+    <h1 class="display-4 text-center">Sign Up</h1>
+    <div class="alert alert-dark" id="success" th:if="${not toSignUp} and ${signupSuccessfully}">
+        You successfully signed up! Please continue to the
+        <a th:href="@{/login}" id="to-login-page">login</a> page.
+    </div>
+    <div class="alert alert-danger" th:if="${hasError}">
+        <span>user/username already exists. Please try again.</span>
+    </div>
+    <form
+            th:object="${userVo}"
+            th:action="@{/signup}"
+            th:if="${toSignUp}"
+            action="#"
+            method="POST"
+    >
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input
+                        th:field="*{firstName}"
+                        type="text"
+                        name="firstName"
+                        class="form-control"
+                        id="inputFirstName"
+                        placeholder="Enter First Name"
+                        maxlength="20"
+                        required
+                >
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input
+                        th:field="*{lastName}"
+                        type="text"
+                        name="lastName"
+                        class="form-control"
+                        id="inputLastName"
+                        placeholder="Enter Last Name"
+                        maxlength="20"
+                        required
+                >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputUsername">Username</label>
+                <input
+                        th:field="*{username}"
+                        type="text"
+                        name="username"
+                        class="form-control"
+                        id="inputUsername"
+                        placeholder="Enter Username"
+                        maxlength="20"
+                        required
+                >
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword">Password</label>
+                <input
+                        th:field="*{password}"
+                        type="password"
+                        name="password"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="Enter Password"
+                        maxlength="20"
+                        required
+                >
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="buttonSignUp">
+            Sign Up
+        </button>
+    </form>
+</div>
+</body>
+</html>

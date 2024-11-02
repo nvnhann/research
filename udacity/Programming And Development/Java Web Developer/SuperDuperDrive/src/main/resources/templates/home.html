@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/bootstrap.min.css}">
+
+    <title>Home</title>
+</head>
+<body class="p-3 mb-2 bg-light text-black">
+<div class="container">
+    <div>
+        <form th:action="@{/logout}" method="POST">
+            <button type="submit" class="btn btn-secondary float-right" id="logoutDiv">Logout</button>
+        </form>
+    </div>
+    <div id="contentDiv" style="clear: right;">
+        <nav style="clear: right;">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-files-tab" data-toggle="tab" href="#nav-files" role="tab"
+                   aria-controls="nav-files" aria-selected="true">Files</a>
+                <a class="nav-item nav-link" id="nav-notes-tab" data-toggle="tab" href="#nav-notes" role="tab"
+                   aria-controls="nav-notes" aria-selected="false">Notes</a>
+                <a class="nav-item nav-link" id="nav-credentials-tab" data-toggle="tab" href="#nav-credentials"
+                   role="tab" aria-controls="nav-credentials" aria-selected="false">Credentials</a>
+            </div>
+        </nav>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-files" role="tabpanel" aria-labelledby="nav-files-tab">
+            <form th:action="@{/files/upload}" enctype="multipart/form-data" method="POST" th:fragment="form">
+                <div class="container my-4">
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label for="fileUpload" class="form-label">Upload a New File:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="file" class="form-control" id="fileUpload" name="fileUpload">
+                        </div>
+                        <button type="submit" class="btn btn-dark" id="uploadButton">Upload</button>
+                    </div>
+                </div>
+        </form>
+
+        <div class="container">
+            <table class="table table-striped" id="fileTable" th:fragment="table">
+                <thead class="table-dark">
+                <tr>
+                    <th style="width: 20%" scope="col"></th>
+                    <th style="width: 80%" scope="col">File Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="file: ${fileList}">
+                    <td>
+                        <a target="_blank" class="btn btn-success me-2"
+                           th:href="@{/files/download?fileId={fileId}(fileId=${file.fileId})}">View</a>
+                        <a class="btn btn-danger" th:href="@{/files/delete?fileId={fileId}(fileId=${file.fileId})}">Delete</a>
+                    </td>
+                    <td th:text="${file.fileName}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="nav-notes" role="tabpanel" aria-labelledby="nav-notes-tab">
+            <button type="button" class="btn btn-info float-right m-1" onclick="showNoteModal()" id="note-creation-btn">
+                + Add a New Note
+            </button>
+            <div class="table-responsive">
+                <table class="table table-striped" id="userTable">
+                    <thead th:replace="fragments/note/table :: head"></thead>
+                    <tbody>
+                    <tr th:each="note : ${noteList}" class="note-elements">
+                        <td th:replace="fragments/note/table :: button-group"></td>
+                        <td th:text="${note.noteTitle}"></td>
+                        <td th:text="${note.noteDescription}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div th:replace="fragments/note/modal :: header"></div>
+                        <div class="modal-body">
+                            <div th:insert="fragments/note/modal :: form"></div>
+                        </div>
+                        <div th:replace="fragments/note/modal :: footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-credentials" role="tabpanel" aria-labelledby="nav-credentials-tab">
+            <button type="button" class="btn btn-info float-right m-1" onclick="showCredentialModal()"
+                    id="credential-creation-btn">+ Add a New Credential
+            </button>
+            <div th:replace="fragments/credential/table :: table"></div>
+            <div class="modal fade" id="credentialModal" tabindex="-1" role="dialog"
+                 aria-labelledby="credentialModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div th:replace="fragments/credential/modal :: header"></div>
+                        <div class="modal-body">
+                            <div th:insert="fragments/credential/modal :: form"></div>
+                        </div>
+                        <div th:replace="fragments/credential/modal :: footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/js/jquery-slim.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+
+<!--For opening the note modal-->
+<script type="text/javascript">
+    // For opening the note modal
+    function showNoteModal(noteId, noteTitle, noteDescription) {
+        $('#note-id').val(noteId ? noteId : '');
+        $('#note-title').val(noteTitle ? noteTitle : '');
+        $('#note-description').val(noteDescription ? noteDescription : '');
+        $('#noteModal').modal('show');
+    }
+
+    // For opening the credentials modal
+    function showCredentialModal(credentialId, url, username, password) {
+        $('#credential-id').val(credentialId ? credentialId : '');
+        $('#credential-url').val(url ? url : '');
+        $('#credential-username').val(username ? username : '');
+        $('#credential-password').val(password ? password : '');
+        $('#credentialModal').modal('show');
+    }
+
+    function editCredential(credential) {
+        $('#credential-id').val(credential.credentialId);
+        $('#credential-url').val(credential.url);
+        $('#credential-username').val(credential.username);
+        $('#credential-password').val(credential.decryptedPassword);
+        $('#credentialModal').modal('show');
+    }
+
+    function editNote(note) {
+        $('#note-id').val(note.noteId);
+        $('#note-title').val(note.noteTitle);
+        $('#note-description').val(note.noteDescription);
+        $('#noteModal').modal('show');
+    }
+
+    $(document).ready(function () {
+        // Activate tab from URL hash
+        var hash = window.location.hash;
+        if (hash) {
+            $('.nav-tabs a[href="' + hash + '"]').tab('show');
+        } else {
+            $('#nav-files-tab').click();
+        }
+
+        // Change URL hash when tab is clicked
+        $('a[data-toggle="tab"]').on('click', function (e) {
+            if (history.pushState) {
+                history.pushState(null, null, this.href);
+            } else {
+                location.hash = this.hash;
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<table class="table table-hover">
+    <thead th:fragment="head" class="thead-light">
+    <tr>
+        <th style="width: 40%" scope="col"></th>
+        <th style="width: 20%" scope="col">Title</th>
+        <th style="width: 40%" scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:fragment="button-group">
+            <button
+                    type="button"
+                    class="btn btn-success"
+                    th:id="'note-edit-' + ${note.noteId}"
+                    th:onclick="editNote([[${note}]])"
+            >
+                Edit
+            </button>
+            <a
+                    class="btn btn-danger"
+                    th:id="'note-delete-' + ${note.noteId}"
+                    th:href="@{/notes/note?noteId={noteId}(noteId=${note.noteId})}"
+            >
+                Delete
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
