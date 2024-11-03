@@ -16,6 +16,7 @@ By Nhan V. Nguyen
     │   ├── Deep Learning
     │   │   ├── Developing a Handwritten Digits Classifier with PyTorch
     │   │   ├── Face Generation
+    │   │   ├── Landmark Classification & Tagging for Social Media Project
     │   │   └── Text Translation and Sentiment Analysis using Transformers
     │   ├── Intro to Machine Learning with Pytorch
     │   │   ├── Create Your Own Image Classifier
@@ -26,6 +27,7 @@ By Nhan V. Nguyen
     │   │   ├── Creating Customer Segments with Arvato
     │   │   └── Finding Donors for CharityML
     │   └── Natural Language Processing
+    │       ├── DNN Speech Recognizer
     │       ├── Machine Translation
     │       └── Part of Speech Tagging
     ├── Cloud Computing
@@ -128,8 +130,5 @@ By Nhan V. Nguyen
     │   └── SQL
     │       ├── Deforestation Exploration
     │       └── Udiddit, A Social News Aggregator
-    └── README.md
-
-125 directories, 2 files
 
 ```
