@@ -1,0 +1,36 @@
+Task0:
+Time Complexity Analysis:
+- Reading the CSV files and converting them to lists takes O(n), where `n` is the total number of records in the file.
+- Accessing the first and last element in the list takes O(1).
+- Therefore, the time complexity for TASK 0 is O(n).
+
+Task1:
+Time Complexity Analysis:
+- The complexity of adding to a set is O(1) for each element.
+- With `n` being the total number of records in texts and calls, iterating through all records is O(n).
+- Therefore, the time complexity for TASK 1 is O(n).
+
+Task2:
+Time Complexity Analysis:
+- The complexity of updating a dictionary is O(1) for each element.
+- Iterating through `n` records in calls takes O(n).
+- The complexity of finding the max in a dictionary is O(m) with `m` being the number of unique phone numbers.
+- Therefore, the time complexity for TASK 2 is O(n), where `m` <= `n`.
+
+Task3:
+Time Complexity Analysis for Part A:
+- Checking each phone number in `calls` is O(n).
+- Adding to a set is O(1) for each element.
+- Sorting the set of area codes is O(k log k) with `k` being the number of unique area codes.
+- The total time complexity for Part A is O(n + k log k).
+
+Time Complexity Analysis for Part B:
+- Iterating through `n` records in `calls` takes O(n).
+- Therefore, the time complexity for Part B is O(n).
+
+Task4:
+Time Complexity Analysis:
+- Creating the sets `outgoing_calls`, `receiving_calls`, `sending_texts`, `receiving_texts` from `calls` and `texts` takes O(n).
+- The union and difference operations on sets take O(m) with `m` being the number of elements in the largest set.
+- Sorting the set `telemarketers` takes O(k log k) with `k` being the number of potential telemarketers.
+- The total time complexity for TASK 4 is O(n + k log k).
